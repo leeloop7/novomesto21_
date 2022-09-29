@@ -1,0 +1,16 @@
+<div class="max-w-7xl mx-auto py-8 px-8">
+  <h2 class="text-5xl font-bold text-gray-600 mb-4 md:mb-16">{{ title }}</h2>
+  {{ content }}
+
+  <section class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 pb-12">
+    {{ collection:blog  sort="date:desc" }}
+    <a href="{{ url }}"
+       class="group">
+      {{ responsive:featured_image webp="true" avif="false" ratio="16/9" }}
+      <span class="text-green-600 text-sm group-hover:text-green-500">{{ date }}</span><br>
+      <h2 class="font-bold text-base text-gray-300 group-hover:text-white">{{ title }}</h2>
+      <div class="text-sm leading-6 mt-2 text-gray-300 group-hover:text-white">{{ intro }}</div>
+    </a>
+    {{ /collection:blog }}
+  </section>
+</div>

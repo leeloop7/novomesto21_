@@ -1,0 +1,138 @@
+title: Pages
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+          localizable: true
+      -
+        handle: code_field
+        field:
+          theme: material
+          mode: htmlmixed
+          mode_selectable: false
+          indent_type: tabs
+          indent_size: 4
+          key_map: default
+          line_numbers: true
+          line_wrapping: true
+          display: 'Code Field'
+          type: code
+          icon: code
+          listable: hidden
+          instructions_position: above
+          localizable: true
+      -
+        handle: bard_field
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          display: 'Bard Field'
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+          localizable: true
+          visibility: visible
+          always_save: false
+          previews: true
+          container: assets
+          remove_empty_nodes: false
+      -
+        handle: code_field_2
+        field:
+          theme: material
+          mode: htmlmixed
+          mode_selectable: false
+          indent_type: tabs
+          indent_size: 4
+          key_map: default
+          line_numbers: true
+          line_wrapping: true
+          display: 'Code Field'
+          type: code
+          icon: code
+          listable: hidden
+          instructions_position: above
+          localizable: true
+      -
+        handle: template
+        field:
+          hide_partials: true
+          display: Template
+          type: template
+          icon: template
+          listable: hidden
+          instructions_position: above
+          localizable: true
+      -
+        handle: featured_image
+        field:
+          mode: list
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: 'Featured image'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          container: assets
+          max_files: 1
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true
+      -
+        handle: gallery
+        field:
+          mode: list
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          display: Gallery
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above

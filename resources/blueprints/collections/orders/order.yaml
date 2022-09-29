@@ -1,0 +1,545 @@
+title: Order
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: customer
+        field:
+          mode: select
+          create: true
+          collections:
+            - customers
+          display: Customer
+          type: entries
+          icon: entries
+          listable: hidden
+          instructions_position: above
+          max_items: 1
+      -
+        handle: gender
+        field:
+          options:
+            male: Male
+            female: Female
+          inline: false
+          cast_booleans: false
+          display: Gender
+          type: radio
+          icon: radio
+          listable: hidden
+          instructions_position: above
+          width: 33
+          if:
+            competitors: 'equals null'
+      -
+        handle: title
+        field:
+          type: hidden
+          required: false
+      -
+        handle: order_number
+        field:
+          type: text
+          validate:
+            - required
+          display: 'Order Number'
+          listable: hidden
+          input_type: text
+          antlers: false
+          width: 50
+          instructions_position: above
+          visibility: read_only
+      -
+        handle: phone
+        field:
+          input_type: text
+          antlers: false
+          display: Phone
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+          width: 50
+      -
+        handle: country
+        field:
+          multiple: false
+          max_items: 1
+          clearable: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          display: Country
+          type: select
+          icon: select
+          width: 50
+          listable: hidden
+          instructions_position: above
+      -
+        handle: club
+        field:
+          input_type: text
+          antlers: false
+          display: Club
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          width: 50
+      -
+        handle: best_time
+        field:
+          input_type: text
+          antlers: false
+          display: 'Best time'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - null
+          width: 50
+          if:
+            competitors: 'equals null'
+      -
+        handle: dp_vet
+        field:
+          default: false
+          display: 'DP Vet'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          width: 33
+      -
+        handle: items
+        field:
+          fields:
+            -
+              handle: id
+              field:
+                type: hidden
+                listable: hidden
+                display: ID
+            -
+              handle: product
+              field:
+                max_items: 1
+                mode: default
+                collections:
+                  - products
+                type: entries
+                listable: hidden
+                display: Product
+                validate:
+                  - required
+                width: 50
+                instructions_position: above
+                create: true
+                visibility: visible
+                always_save: false
+            -
+              handle: variant
+              field:
+                display: Variant
+                type: product_variant
+                icon: product_variant
+                width: 50
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+            -
+              handle: quantity
+              field:
+                input_type: number
+                type: text
+                listable: hidden
+                display: Quantity
+                width: 50
+                instructions_position: above
+                antlers: false
+                visibility: read_only
+            -
+              handle: total
+              field:
+                type: money
+                listable: hidden
+                display: Total
+                validate: required
+                width: 50
+                instructions_position: above
+                visibility: read_only
+            -
+              handle: metadata
+              field:
+                mode: dynamic
+                display: Metadata
+                type: array
+                icon: array
+                listable: hidden
+                visibility: read_only
+          mode: stacked
+          reorderable: false
+          type: grid
+          listable: false
+          display: 'Line Items'
+          min_rows: 1
+          add_row: 'Add Line Item'
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: birthyear
+        field:
+          display: Birthyear
+          type: integer
+          icon: integer
+          listable: hidden
+          instructions_position: above
+          width: 33
+          if:
+            competitors: 'equals null'
+      -
+        handle: shirt_size
+        field:
+          options:
+            xs: XS
+            s: S
+            m: M
+            l: L
+            xl: XL
+          multiple: false
+          clearable: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          display: 'Shirt size'
+          type: select
+          icon: select
+          listable: hidden
+          instructions_position: above
+          width: 33
+          if:
+            competitors: 'equals null'
+      -
+        handle: items_total
+        field:
+          type: money
+          display: 'Items Total'
+          read_only: true
+          validate:
+            - required
+          instructions_position: above
+          listable: false
+          visibility: read_only
+      -
+        handle: shipping_total
+        field:
+          type: money
+          display: 'Shipping Total'
+          read_only: true
+          validate:
+            - required
+          instructions_position: above
+          listable: false
+          visibility: read_only
+      -
+        handle: tax_total
+        field:
+          type: money
+          display: 'Tax Total'
+          read_only: true
+          validate:
+            - required
+          instructions_position: above
+          listable: false
+          visibility: read_only
+      -
+        handle: coupon_total
+        field:
+          type: money
+          display: 'Coupon Total'
+          read_only: true
+          validate:
+            - required
+          instructions_position: above
+          listable: false
+          visibility: read_only
+      -
+        handle: email_notifications
+        field:
+          default: false
+          display: 'Email notifications'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          width: 33
+      -
+        handle: sms_notifications
+        field:
+          default: false
+          display: 'SMS notifications'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          width: 33
+      -
+        handle: competitors
+        field:
+          display: Competitors
+          type: table
+          icon: table
+          listable: hidden
+          instructions_position: above
+      -
+        handle: primary_school
+        field:
+          input_type: text
+          antlers: false
+          display: 'Primary school'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  address_information:
+    display: 'Address Information'
+    fields:
+      -
+        handle: address
+        field:
+          input_type: text
+          antlers: false
+          display: Address
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+      -
+        handle: zip
+        field:
+          display: ZIP
+          type: integer
+          icon: integer
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+          width: 33
+      -
+        handle: city
+        field:
+          input_type: text
+          antlers: false
+          display: City
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+          width: 66
+  company:
+    display: Company
+    fields:
+      -
+        handle: company_name
+        field:
+          input_type: text
+          antlers: false
+          display: 'Company Name'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          width: 50
+      -
+        handle: company_id
+        field:
+          input_type: text
+          antlers: false
+          display: 'Company ID'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          width: 50
+      -
+        handle: company_address
+        field:
+          input_type: text
+          antlers: false
+          display: 'Company Address'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          width: 50
+      -
+        handle: company_taxpayer
+        field:
+          default: false
+          display: 'Company Taxpayer'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          width: 50
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: paid_date
+        field:
+          mode: single
+          time_enabled: true
+          time_required: true
+          earliest_date: '1900-01-01'
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          type: date
+          listable: hidden
+          display: 'Paid Date'
+          validate: required
+          width: 50
+          visibility: read_only
+      -
+        handle: grand_total
+        field:
+          type: money
+          display: 'Grand Total'
+          read_only: true
+          validate: required
+          width: 33
+          listable: hidden
+          visibility: read_only
+      -
+        handle: is_paid
+        field:
+          type: toggle
+          listable: true
+          display: 'Is Paid?'
+          width: 50
+          instructions_position: above
+          default: false
+          visibility: read_only
+  dog:
+    display: Dog
+    fields:
+      -
+        handle: dog_name
+        field:
+          input_type: text
+          antlers: false
+          display: 'Dog name'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: dog_breed
+        field:
+          input_type: text
+          antlers: false
+          display: 'Dog breed'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: dog_birthyear
+        field:
+          input_type: text
+          antlers: false
+          display: 'Dog birthyear'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  contacts:
+    display: Contacts
+    fields:
+      -
+        handle: contact_name
+        field:
+          input_type: text
+          antlers: false
+          display: 'Contact Name'
+          type: text
+          icon: text
+          width: 50
+          listable: hidden
+          instructions_position: above
+      -
+        handle: contact_phone
+        field:
+          input_type: text
+          antlers: false
+          display: 'Contact Phone'
+          type: text
+          icon: text
+          width: 50
+          listable: hidden
+          instructions_position: above
+  additional_information:
+    display: 'Additional Information'
+    fields:
+      -
+        handle: slug
+        field:
+          type: hidden
+          localizable: true
+          display: Slug
+          icon: hidden
+          listable: false
+          validate:
+            - required
+          visibility: read_only
+      -
+        handle: footnote
+        field:
+          antlers: false
+          display: Footnote
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+      -
+        handle: terms_and_conditions
+        field:
+          default: false
+          display: 'Terms and conditions'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+          width: 33
+      -
+        handle: gdpr
+        field:
+          default: false
+          display: GDPR
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          validate:
+            - required
+          width: 33

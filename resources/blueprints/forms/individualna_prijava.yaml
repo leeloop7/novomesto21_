@@ -1,0 +1,133 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: ime
+        field:
+          input_type: text
+          antlers: false
+          display: Ime
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: priimek
+        field:
+          input_type: text
+          antlers: false
+          display: Priimek
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: ulica_in_hisna_stevilka
+        field:
+          input_type: text
+          antlers: false
+          display: 'Ulica in hišna številka'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: postna_stevilka
+        field:
+          input_type: text
+          antlers: false
+          display: 'Poštna številka'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: kraj
+        field:
+          input_type: text
+          antlers: false
+          display: Kraj
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: e-mail
+        field:
+          input_type: text
+          antlers: false
+          display: E-mail
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          validate:
+            - email
+      -
+        handle: klub
+        field:
+          input_type: text
+          antlers: false
+          display: Klub
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: telefonska_stevilka
+        field:
+          input_type: text
+          antlers: false
+          display: 'Telefonska številka'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+      -
+        handle: spol
+        field:
+          options:
+            moski: Moški
+            zenski: Ženski
+          inline: false
+          cast_booleans: false
+          display: Spol
+          type: radio
+          icon: radio
+          listable: hidden
+          instructions_position: above
+      -
+        handle: proga
+        field:
+          options:
+            polmaraton: Polmaraton
+            10km: 'Rekreativni tek - 10km'
+            6km: 'Rekreativni tek - 6.5km'
+          multiple: false
+          clearable: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          display: Proga
+          type: select
+          icon: select
+          listable: hidden
+          instructions_position: above
+      -
+        handle: opt-ins
+        field:
+          inline: false
+          options:
+            national_championship: 'Tekmoval bom na državnem prvenstvu veteranov slovenije (morate biti član ZAVS). Prijaviti se morate tudi preko ZAVS.'
+            emails: 'Želim prejemati elektronska obvestila v zvezi z novomeškim polmaratonom.'
+            messages: 'Želim prejeti SMS z rezultatom mojega teka.'
+            terms: 'Strinjam se s splošnimi pogoji'
+            gdpr: 'Strinjam se z obvestilom o varstvu osebnih podatkov'
+          display: Opt-ins
+          type: checkboxes
+          icon: checkboxes
+          instructions: '[Splošni pogoji](https://www.novomesto21.si/sl/o-maratonu/sploni-pogoji) in [Strinjam se z obvestilom o varstvu osebnih podatkov](https://www.novomesto21.si/sl/o-maratonu/sploni-pogoji)'
+          listable: hidden
+          instructions_position: above

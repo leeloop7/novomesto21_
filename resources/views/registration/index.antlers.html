@@ -1,0 +1,150 @@
+<div class="max-w-7xl mx-auto py-8 px-8"
+     x-data="{ variant: '6.5km' }">
+  <h2 class="text-4xl md:text-5xl font-bold text-gray-600 text-center">{{ title }}</h2>
+  <!-- <div class="mt-10 sm:mt-16 relative justify-center rounded-lg grid grid-cols-2 sm:grid-cols-3 gap-3">
+    {{ collection:products }}
+        <a href="{{ url }}"
+           class="rounded-lg shadow-sm bg-gray-800 hover:bg-gray-700 px-2 py-12 flex justify-center items-center">
+          <h2 class="text-base md:text-lg leading-6 font-medium text-white text-center">{{ title }}</h2>
+        </a>
+    {{ /collection:products }}
+  </div> -->
+  <!-- <div class="rounded-md bg-gray-200 p-4 my-4">
+    <div class="flex">
+      <div class="flex-shrink-0">
+        <svg class="h-5 w-5 text-green-400"
+             xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 20 20"
+             fill="currentColor"
+             aria-hidden="true">
+          <path fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clip-rule="evenodd" />
+        </svg>
+      </div><div class="ml-3">
+        <h3 class="text-sm font-medium text-green-800">SEPA plačila</h3>
+        <div class="mt-2 text-sm text-green-700">
+          <p>V kolikor se odločite za plačilo preko SEPA bremenitve naj vas podatki za nakazilo ne zavedejo. Podatki so resnični in
+            pripradajo našemu ponudniku oz. posredniku za internetna plačila.</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="mt-10 sm:mt-16">
+    <div class="md:hidden">
+      <select x-model="variant" class="block w-full focus:ring-green-500 focus:border-green-500 border-gray-800 rounded-md bg-gray-800">
+        <option value="6.5km" selected>{{ trans:checkout.recreational_run }} - 6.5km</option>
+        <option value="10km">{{ trans:checkout.recreational_run }} - 10km</option>
+        <option value="Polmaraton">{{ trans:checkout.Polmaraton }}</option>
+        <option value="Canicross">{{ trans:checkout.Canicross }}</option>
+        <option value="Nordijska hoja">{{ trans:checkout key='Nordijska hoja' }}</option>
+        <option value="Pohod">{{ trans:checkout.Pohod }}</option>
+        <option value="Otroški teki">{{ trans:checkout key='Otroški teki' }}</option>
+      </select>
+    </div>
+    <div class="hidden md:block">
+      <nav class="relative z-0 shadow grid grid-cols-3 lg:grid-cols-4 gap-2" aria-label="Tabs">
+        <a @click="variant = '6.5km'" class="rounded-lg cursor-pointer text-white group relative min-w-0 flex-1 overflow-hidden bg-gray-800 hover:bg-gray-700 py-4 px-4 text-sm font-medium text-center focus:z-10" aria-current="page">
+          <span>{{ trans:checkout.recreational_run }} - 6.5km</span>
+          <span aria-hidden="true" :class="{ 'bg-green-500': variant === '6.5km' }" class="absolute inset-x-0 bottom-0 h-0.5"></span>
+        </a>
+
+        <a @click="variant = '10km'" class="rounded-lg cursor-pointer text-white group relative min-w-0 flex-1 overflow-hidden bg-gray-800 hover:bg-gray-700 py-4 px-4 text-sm font-medium text-center focus:z-10">
+          <span>{{ trans:checkout.recreational_run }} - 10km</span>
+          <span aria-hidden="true" :class="{ 'bg-green-500': variant === '10km' }" class="absolute inset-x-0 bottom-0 h-0.5"></span>
+        </a>
+
+        <a @click="variant = 'Polmaraton'" class="rounded-lg cursor-pointer text-white group relative min-w-0 flex-1 overflow-hidden bg-gray-800 hover:bg-gray-700 py-4 px-4 text-sm font-medium text-center focus:z-10">
+          <span>{{ trans:checkout.Polmaraton }}</span>
+          <span aria-hidden="true" :class="{ 'bg-green-500': variant === 'Polmaraton' }" class="absolute inset-x-0 bottom-0 h-0.5"></span>
+        </a>
+
+        <a @click="variant = 'Canicross'" class="rounded-lg cursor-pointer text-white group relative min-w-0 flex-1 overflow-hidden bg-gray-800 hover:bg-gray-700 py-4 px-4 text-sm font-medium text-center focus:z-10">
+          <span>{{ trans:checkout.Canicross }}</span>
+          <span aria-hidden="true" :class="{ 'bg-green-500': variant === 'Canicross' }" class="absolute inset-x-0 bottom-0 h-0.5"></span>
+        </a>
+
+        <a @click="variant = 'Nordijska hoja'" class="rounded-lg cursor-pointer text-white group relative min-w-0 flex-1 overflow-hidden bg-gray-800 hover:bg-gray-700 py-4 px-4 text-sm font-medium text-center focus:z-10">
+          <span>{{ trans key='checkout.Nordijska hoja' }}</span>
+          <span aria-hidden="true" :class="{ 'bg-green-500': variant === 'Nordijska hoja' }" class="absolute inset-x-0 bottom-0 h-0.5"></span>
+        </a>
+
+        <a @click="variant = 'Pohod'" class="rounded-lg cursor-pointer text-white group relative min-w-0 flex-1 overflow-hidden bg-gray-800 hover:bg-gray-700 py-4 px-4 text-sm font-medium text-center focus:z-10">
+          <span>{{ trans:checkout.Pohod }}</span>
+          <span aria-hidden="true" :class="{ 'bg-green-500': variant === 'Pohod' }" class="absolute inset-x-0 bottom-0 h-0.5"></span>
+        </a>
+
+        <a @click="variant = 'Otroški teki'" class="rounded-lg cursor-pointer text-white group relative min-w-0 flex-1 overflow-hidden bg-gray-800 hover:bg-gray-700 py-4 px-4 text-sm font-medium text-center focus:z-10">
+          <span>{{ trans key='checkout.Otroški teki' }}</span>
+          <span aria-hidden="true" :class="{ 'bg-green-500': variant === 'Otroški teki' }" class="absolute inset-x-0 bottom-0 h-0.5"></span>
+        </a>
+
+      </nav>
+    </div>
+  </div>
+  {{ cache key="registration_list" }}
+    {{ registrations as="entries" }}
+    <div class="mt-4 sm:mt-8">
+        <div x-show="variant == '6.5km'" x-cloak>
+          {{ entries }}
+            {{ if length == "6.5km" }}
+              <div>{{ increment from="1" }}. {{ last_name | title }} {{ first_name | title }}</div>
+            {{ /if }}
+          {{ /entries }}
+        </div>
+        <div x-show="variant == '10km'" x-cloak>
+          {{ entries }}
+            {{ if length == "10km" }}
+              <div>{{ increment:one from="1" }}. {{ last_name | title }} {{ first_name | title }}</div>
+            {{ /if }}
+          {{ /entries }}
+        </div>
+        <div x-show="variant == 'Polmaraton'" x-cloak>
+          {{ entries }}
+            {{ if length == "Polmaraton" }}
+              <div>{{ increment:two from="1" }}. {{ last_name | title }} {{ first_name | title }}</div>
+            {{ /if }}
+          {{ /entries }}
+        </div>
+        <div x-show="variant == 'Canicross'" x-cloak>
+          {{ entries }}
+            {{ if length == "Canicross" }}
+              <div>
+                {{ increment:three from="1" }}. {{ last_name | title }} {{ first_name | title }}
+                <span class="text-gray-500"> - {{ dog:name }}, {{ dog:breed }}, {{ dog:birthyear }}</span>
+              </div>
+            {{ /if }}
+          {{ /entries }}
+        </div>
+        <div x-show="variant == 'Nordijska hoja'" x-cloak>
+          {{ entries }}
+            {{ if length == "Nordijska hoja" }}
+              <div>
+                {{ increment:four from="1" }}. {{ last_name | title }} {{ first_name | title }}
+              </div>
+            {{ /if }}
+          {{ /entries }}
+        </div>
+        <div x-show="variant == 'Pohod'" x-cloak>
+          {{ entries }}
+            {{ if length == "Pohod" }}
+              <div>
+                {{ increment:five from="1" }}. {{ last_name | title }} {{ first_name | title }}
+              </div>
+            {{ /if }}
+          {{ /entries }}
+        </div>
+        <div x-show="variant == 'Otroški teki'" x-cloak>
+          {{ entries }}
+            {{ if length == "Otroški teki" }}
+              <div>
+                {{ increment:six from="1" }}. {{ last_name | title }} {{ first_name | title }}
+                <span class="text-gray-500"> - {{ school }}</span>
+              </div>
+            {{ /if }}
+          {{ /entries }}
+        </div>
+    </div>
+    {{ /registrations }}
+  {{ /cache }}
+</div>

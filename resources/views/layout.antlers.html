@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>{{ title }}</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="stylesheet"
+        href="{{ mix src='css/tailwind.css' }}">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+
+</head>
+
+<body class="bg-gray-900 text-white text-lg font-body">
+  {{ partial:header2 }}
+
+  <div class="{{ if !segment_1 }} {{ else }} max-w-7xl py-8 container {{ /if }} mx-auto">
+    {{ template_content }}
+  </div>
+
+  {{ partial:footer }}
+  <script src="https://kit.fontawesome.com/ce34192311.js"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+          defer></script>
+  <script src="{{ mix src='js/site.js' }}"></script>
+  {{ yield:scripts }}
+</body>
+
+</html>

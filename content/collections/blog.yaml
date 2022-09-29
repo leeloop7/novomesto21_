@@ -1,0 +1,16 @@
+title: News
+sites:
+  - default
+  - english
+propagate: false
+template: blog/show
+layout: layout
+revisions: false
+route:
+  default: 'novice/{slug}'
+  english: 'news/{slug}'
+date: true
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private

@@ -1,0 +1,117 @@
+title: Product
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+          localizable: true
+      -
+        handle: description
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          display: Description
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+      -
+        handle: product_variants
+        field:
+          display: 'Product variants'
+          type: product_variants
+          icon: product_variants
+          listable: hidden
+          instructions_position: above
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: group
+        field:
+          default: false
+          display: Group
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+      -
+        handle: canicross
+        field:
+          default: false
+          display: Canicross
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: nordic_walking
+        field:
+          default: false
+          display: 'Nordic walking'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: hike
+        field:
+          default: false
+          display: Hike
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: children_run
+        field:
+          default: false
+          display: 'Children run'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: tax_category
+        field:
+          type: tax_category
+          display: 'Tax Category'
+          max_items: 1
+          mode: select

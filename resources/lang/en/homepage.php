@@ -1,0 +1,22 @@
+<?php
+return [
+    'register' => 'Register',
+    'news' => 'News',
+    'until' => 'Until the competition',
+    'days' => 'days',
+    'hours' => 'hours',
+    'minutes' => 'minutes',
+    'seconds' => 'seconds',
+    'aftermovie' => 'Watch the aftermovie',
+    'marathon' => '5th Novo mesto Halfmarathon',
+    'why' => 'Why',
+    'marathon_2' => 'Halfmarathon Novo mesto',
+    'why_1_title' => 'Great atmosphere',
+    'why_1' => 'Excellent atmosphere, hospitality and organization at the Novo mesto 1/2 marathon is guaranteed.',
+    'why_2_title' => 'A varied route',
+    'why_2' => 'The 21-kilometer distance is suitable for the widest circle of runners, as they do not require months of preparation for it.',
+    'why_3_title' => 'Start package',
+    'why_3' => 'A top-quality running T-shirt, a big medal, a beer at the half marathon finish and other gifts are waiting for you.',
+    'why_4_title' => 'Something new',
+    'why_4' => 'There is no similar running event in the wider SE part of Slovenia.',
+];

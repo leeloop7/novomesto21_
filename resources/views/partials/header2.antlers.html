@@ -1,0 +1,40 @@
+<!-- This example requires Tailwind CSS v2.0+ -->
+<header class="bg-white sticky top-0 z-50 border-b border-gray-200">
+    <nav aria-label="Top" class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+      <div class="relative px-4 pb-14 sm:static sm:px-0 sm:pb-0">
+        <div class="h-16 md:h-auto flex items-center justify-between">
+          <!-- Logo -->
+          <div class="flex-1 flex">
+            <a href="{{ site:url }}">
+              <img class="h-8 md:w-32 md:h-auto md:py-4" src="/img/logo_nm.png" alt="">
+            </a>
+          </div>
+
+          <div class="absolute bottom-0 inset-x-0 border-t overflow-x-auto sm:static sm:border-t-0">
+            <div class="h-14 flex items-center px-4 space-x-8 sm:h-auto">
+              {{ nav:main_menu }}
+              <a href="{{ url }}" class="text-sm min-w-fit font-semibold text-gray-800 hover:text-green-600">{{ title }}</a>
+              {{ /nav:main_menu }}
+            </div>
+          </div>
+          <div class="flex-1 flex items-center justify-end">
+            <!-- Cart -->
+            <div class="flex space-x-4 items-center ml-4 text-sm lg:relative lg:ml-8">
+              {{ locales self="false" }}
+                <a href="{{ permalink }}" class="">
+                   <img src="/img/{{ locale:name }}.svg" class="h-4 rounded-md">
+                </a>
+              {{ /locales }}
+              <!--
+              <a href="{{ link id='f0069f0b-5b9c-4b7f-88db-723ee3f36dab' }}" class="group -m-2 p-2 flex items-center" aria-expanded="false">
+                <svg class="flex-shrink-0 h-6 w-6 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>
+                <span class="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">{{ sc:cart:quantityTotal }}</span>
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>

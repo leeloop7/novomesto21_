@@ -1,0 +1,81 @@
+<tr class="">
+    <td class="min-w-[120px] xs:min-w-auto whitespace-nowrap p-2.5 text-sm font-medium text-white sm:pl-4">
+      {{ variant }}
+    </td>
+    <td class="min-w-[150px] xs:min-w-auto whitespace-nowrap p-2.5 text-sm font-medium text-white sm:pl-4">
+        <input type="text" name="competitors[{{ index }}][name]" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+    </td>
+    <td class="min-w-[150px] xs:min-w-auto whitespace-nowrap p-2.5 text-sm text-white">
+        <input type="text" name="competitors[{{ index }}][surname]" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+    </td>
+    <td class="min-w-[150px] xs:min-w-auto whitespace-nowrap p-2.5 text-sm text-white">
+        <select required name="competitors[{{ index }}][shirt_size]" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m" selected>M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+        </select>
+    </td>
+    <td class="min-w-[150px] xs:min-w-auto whitespace-nowrap p-2.5 text-sm text-white">
+        <input type="text" name="competitors[{{ index }}][phone]" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+    </td>
+    <td class="min-w-[150px] xs:min-w-auto whitespace-nowrap p-2.5 text-sm text-white">
+        <select required name="competitors[{{ index }}][birthyear]" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+            {{ if variant == "6.5km" }}
+                {{ loop from="2011" to="1940" }}
+                <option value="{{ value }}">{{ value }}</option>
+                {{ /loop }}
+            {{ /if }}
+            {{ if variant == "10km" }}
+                {{ loop from="2010" to="1940" }}
+                <option value="{{ value }}">{{ value }}</option>
+                {{ /loop }}
+            {{ /if }}
+            {{ if variant == "Polmaraton" || variant == "Halfmarathon" }}
+                {{ loop from="2007" to="1940" }}
+                <option value="{{ value }}">{{ value }}</option>
+                {{ /loop }}
+            {{ /if }}
+        </select>
+    </td>
+    <td class="min-w-[150px] xs:min-w-auto whitespace-nowrap p-2.5 text-sm text-white">
+        <div class="space-y-1 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+            <div class="flex items-center">
+              <input id="{{ index }}-male" name="competitors[{{ index }}][gender]" type="radio" value="male" checked class="focus:ring-green-500 h-4 w-4 text-green-600 border-gray-300">
+              <label for="{{ index }}-male" class="ml-3 block text-sm font-medium text-gray-200">{{ trans:checkout.male }}</label>
+            </div>
+
+            <div class="flex items-center">
+              <input id="{{ index }}-female" name="competitors[{{ index }}][gender]" type="radio" value="female" class="focus:ring-green-500 h-4 w-4 text-green-600 border-gray-300">
+              <label for="{{ index }}-female" class="ml-3 block text-sm font-medium text-gray-200">{{ trans:checkout.female }}</label>
+            </div>
+          </div>
+    </td>
+    <td class="min-w-[150px] xs:min-w-auto whitespace-nowrap p-2.5 text-sm text-white">
+        {{ if variant == "10km" }}
+          <select required name="competitors[{{ index }}][best_time]" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+            <option value="Do 45:00 minut">{{ trans:checkout.time_1 time='45:00' }}</option>
+            <option value="45:00 - 53:59">45:00 - 53:59</option>
+            <option value="Nad 54:00 minut">{{ trans:checkout.time_2 time='54:00' }}</option>
+          </select>
+        {{ /if }}
+        {{ if variant == "Polmaraton" || variant == "Halfmarathon" }}
+          <select required name="competitors[{{ index }}][best_time]" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+            <option value="Do 1:39:59">{{ trans:checkout.time_3 time='1:39:59' }}</option>
+            <option value="1:40:00 - 1:51:59">1:40:00 - 1:51:59</option>
+            <option value="Nad 1:52:00">{{ trans:checkout.time_4 time='1:52:00' }}</option>
+          </select>
+        {{ /if }}
+        {{ if variant == "6.5km" }}
+          <select required disabled name="competitors[{{ index }}][best_time]" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+            <option selected value="/">/</option>
+          </select>
+        {{ /if }}
+    </td>
+    <td class="min-w-[80px] whitespace-nowrap p-2.5 text-sm text-white sm:pr-4">
+        <input type='hidden' value='0' name='competitors[{{ index }}][dp_vet]'>
+        <input type='checkbox' value='1' name='competitors[{{ index }}][dp_vet]' class="float-right focus:ring-green-500 h-4 w-4 text-green-600 border-gray-300 rounded">
+    </td>
+    <input type='hidden' value='{{ variant }}' name='competitors[{{ index }}][length]'>
+  </tr>

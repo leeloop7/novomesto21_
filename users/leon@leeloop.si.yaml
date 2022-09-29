@@ -1,0 +1,41 @@
+name: Leon
+super: true
+id: c82a7926-03bd-4bb0-81b3-2109899ea6c9
+password_hash: $2y$10$XPfEKpTC1dhXcTOMxejg9ukhthKl6UnfXjFpi9r8hlT/.PaprwEEa
+preferences:
+  collections:
+    products:
+      columns:
+        - title
+        - site
+        - slug
+        - order
+      after_save: continue_editing
+    orders:
+      columns:
+        - title
+        - customer
+        - phone
+        - country
+        - grand_total
+        - is_paid
+        - paid_date
+      per_page: 500
+    customers:
+      columns:
+        - title
+        - email
+      per_page: 500
+    coupons:
+      columns:
+        - title
+        - slug
+        - value
+    pages:
+      after_save: continue_editing
+  simple_commerce:
+    overview_widgets:
+      orders-chart: true
+      recent-orders: true
+      top-customers: false
+      low-stock-products: false

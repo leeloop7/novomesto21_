@@ -1,0 +1,573 @@
+{{ if {sc:cart:count} === 0 }}
+    {{ redirect to="/" }}
+{{ /if }}
+
+<div class="max-w-2xl mx-auto pt-8 pb-24 px-4 sm:px-6 lg:max-w-7xl lg:px-8 relative" x-data="{ panel: false }">
+        {{ if {sc:hasErrors} === true }}
+            <div class="rounded-md bg-red-100 p-4 mb-6">
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <svg class="h-5 w-5 text-red-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h3 class="text-sm font-medium text-red-800">{{ trans:checkout.error }}</h3>
+
+                        <!-- <div class="mt-2 text-sm text-red-700">
+                            <ul class="list-disc pl-5 space-y-1">
+                                {{ sc:errors }}
+                                    <li>{{ value }}</li>
+                                {{ /sc:errors }}
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+      {{ /if }}
+      <div class="lg:grid lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16">
+        {{ sc:cart:update redirect="{ link id='d9424b51-4097-44c4-9758-a98ebe209627' }" }}
+        <div>
+          <div>
+            {{ sc:cart }}
+
+            {{ if !items.0:product:group }}
+
+                <h2 class="text-lg font-medium text-white">{{ trans:checkout.base_info }}</h2>
+
+            {{ else }}
+
+                <h2 class="text-lg font-medium text-white">{{ trans:checkout.carrier }}</h2>
+
+            {{ /if }}
+
+            {{ /sc:cart }}
+
+            <div class="mt-4 flex flex-col sm:grid sm:grid-cols-2 gap-y-6 sm:gap-x-4">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-200">{{ trans:checkout.name }} <span class="text-red-500">*</span></label>
+                <div class="mt-1">
+                  <input required type="text" id="name" name="first_name" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                </div>
+              </div>
+
+              <div>
+                <label for="surname" class="block text-sm font-medium text-gray-200">{{ trans:checkout.surname }} <span class="text-red-500">*</span></label>
+                <div class="mt-1">
+                  <input required type="text" id="surname" name="last_name" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                </div>
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-200">{{ trans:checkout.email }} <span class="text-red-500">*</span></label>
+                <div class="mt-1">
+                  <input required type="email" id="email" name="email" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                </div>
+              </div>
+
+              {{ if !items.0:product:hike && !items.0:product:nordic_walking && !items.0:product:children_run }}
+
+              <div>
+                <label for="country" class="block text-sm font-medium text-gray-200">{{ trans:checkout.country }} <span class="text-red-500">*</span></label>
+                <div class="mt-1">
+                  <select required id="country" name="country" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                    {{ sc:countries common="SI" }}
+                    <option value="{{ iso }}">{{ name }}</option>
+                    {{ /sc:countries }}
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="address" class="block text-sm font-medium text-gray-200">{{ trans:checkout.address }} <span class="text-red-500">*</span></label>
+                <div class="mt-1">
+                  <input required type="text" name="address" id="address" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                </div>
+              </div>
+
+              <div>
+                <label for="zip" class="block text-sm font-medium text-gray-200">{{ trans:checkout.zip }} <span class="text-red-500">*</span></label>
+                <div class="mt-1">
+                  <input required type="text" name="zip" id="zip" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                </div>
+              </div>
+
+              <div>
+                <label for="city" class="block text-sm font-medium text-gray-200">{{ trans:checkout.city }} <span class="text-red-500">*</span></label>
+                <div class="mt-1">
+                  <input required type="text" name="city" id="city" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                </div>
+              </div>
+
+              {{ /if }}
+
+              <div>
+                <label for="phone" class="block text-sm font-medium text-gray-200">{{ trans:checkout.phone }} <span class="text-red-500">*</span></label>
+                <div class="mt-1">
+                  <input required type="text" name="phone" id="phone" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                </div>
+              </div>
+
+              {{ if !items.0:product:hike && !items.0:product:nordic_walking && !items.0:product:children_run }}
+
+              <div>
+                <label for="club" class="block text-sm font-medium text-gray-200">{{ trans:checkout.club }}</label>
+                <div class="mt-1">
+                  <input type="text" name="club" id="club" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                </div>
+              </div>
+
+              {{ /if }}
+
+              {{ sc:cart }}
+
+              {{ if !items.0:product:group }}
+
+                {{ if !items.0:product:hike && !items.0:product:nordic_walking }}
+
+                <div>
+                <label for="gender" class="block text-sm font-medium text-gray-200">{{ trans:checkout.gender }} <span class="text-red-500">*</span></label>
+                <fieldset class="mt-3">
+                  <div class="space-y-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-10">
+                    <div class="flex items-center">
+                      <input id="male" name="gender" type="radio" value="male" checked class="focus:ring-green-500 h-4 w-4 text-green-600 border-gray-300">
+                      <label for="male" class="ml-3 block text-sm font-medium text-gray-200">{{ trans:checkout.male }}</label>
+                    </div>
+
+                    <div class="flex items-center">
+                      <input id="female" name="gender" type="radio" value="female" class="focus:ring-green-500 h-4 w-4 text-green-600 border-gray-300">
+                      <label for="female" class="ml-3 block text-sm font-medium text-gray-200">{{ trans:checkout.female }}</label>
+                    </div>
+                  </div>
+                </fieldset>
+                </div>
+
+                {{ /if }}
+
+
+                <div>
+                <label for="birthyear" class="block text-sm font-medium text-gray-200">{{ trans:checkout.birthyear }} <span class="text-red-500">*</span></label></label>
+                <div class="mt-1">
+                    <select required id="birthyear" name="birthyear" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                        {{ if items.0:variant:key == "6.5km" }}
+                            {{ loop from="2011" to="1940" }}
+                            <option value="{{ value }}">{{ value }}</option>
+                            {{ /loop }}
+                        {{ elseif items.0:variant:key == "10km" }}
+                            {{ loop from="2010" to="1940" }}
+                            <option value="{{ value }}">{{ value }}</option>
+                            {{ /loop }}
+                        {{ elseif items.0:variant:key == "Polmaraton" }}
+                            {{ loop from="2007" to="1940" }}
+                            <option value="{{ value }}">{{ value }}</option>
+                            {{ /loop }}
+                        {{ elseif items.0:variant:key == "Otroški teki" }}
+                            {{ loop from="2016" to="2008" }}
+                            <option value="{{ value }}">{{ value }}</option>
+                            {{ /loop }}
+                        {{ else }}
+                            {{ loop from="2015" to="1940" }}
+                            <option value="{{ value }}">{{ value }}</option>
+                            {{ /loop }}
+                        {{ /if }}
+                    </select>
+                </div>
+                </div>
+
+
+                {{ if items.0:product:children_run }}
+                  <div>
+                    <label for="primary_school" class="block text-sm font-medium text-gray-200">{{ trans:checkout.primary_school }} <span class="text-red-500">*</span></label>
+                    <div class="mt-1">
+                      <input required type="text" name="primary_school" id="primary_school" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                    </div>
+                  </div>
+                {{ else }}
+                  <div>
+                    <label for="shirt_size" class="block text-sm font-medium text-gray-200">{{ trans:checkout.shirt_size }} <span class="text-red-500">*</span></label>
+                    <div class="mt-1">
+                      <select required id="shirt_size" name="shirt_size" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m" selected>M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                      </select>
+                    </div>
+                  </div>
+                {{ /if }}
+
+                {{ if items.0:variant:key == "10km" }}
+                <div class="col-span-2">
+                <label for="best_time" class="block text-sm font-medium text-gray-200">{{ trans:checkout.best_time race="{items.0:variant:variant}"  }} <span class="text-red-500">*</span></label>
+                <div class="mt-1">
+                  <select required id="best_time" name="best_time" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                    <option value="Do 45:00 minut">{{ trans:checkout.time_1 time='45:00' }}</option>
+                    <option value="45:00 - 53:59">45:00 - 53:59</option>
+                    <option value="Nad 54:00 minut">{{ trans:checkout.time_2 time='54:00' }}</option>
+                  </select>
+                </div>
+                </div>
+                {{ elseif items.0:variant:key == "Polmaraton" }}
+                <div class="col-span-2">
+                  <label for="best_time" class="block text-sm font-medium text-gray-200">{{ trans:checkout.best_time race="{items.0:variant:variant}"  }} <span class="text-red-500">*</span></label>
+                  <div class="mt-1">
+                    <select required id="best_time" name="best_time" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                      <option value="Do 1:39:59">{{ trans:checkout.time_3 time='1:39:59' }}</option>
+                      <option value="1:40:00 - 1:51:59">1:40:00 - 1:51:59</option>
+                      <option value="Nad 1:52:00">{{ trans:checkout.time_4 time='1:52:00' }}</option>
+                    </select>
+                  </div>
+                </div>
+                {{ /if }}
+
+              {{ /if }}
+
+              {{ /sc:cart }}
+
+
+            </div>
+          </div>
+
+          {{ sc:cart }}
+
+          {{ if items.0:product:canicross }}
+            <div class="mt-10 border-t border-gray-700 pt-10">
+              <h2 class="text-lg font-medium text-white">{{ trans:checkout.dog_info }}</h2>
+              <div class="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
+                <div>
+                  <label for="dog_name" class="block text-sm font-medium text-gray-200">{{ trans:checkout.dog_name }} <span class="text-red-500">*</span></label></label>
+                  <div class="mt-1">
+                    <input required type="text" id="dog_name" name="dog_name" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                  </div>
+                </div>
+
+                <div>
+                  <label for="dog_breed" class="block text-sm font-medium text-gray-200">{{ trans:checkout.dog_breed }} <span class="text-red-500">*</span></label></label>
+                  <div class="mt-1">
+                    <input required type="text" id="dog_breed" name="dog_breed" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                  </div>
+                </div>
+
+                <div>
+                  <label for="dog_birthyear" class="block text-sm font-medium text-gray-200">{{ trans:checkout.dog_birthyear }} <span class="text-red-500">*</span></label></label>
+                  <div class="mt-1">
+                      <input required type="text" id="dog_birthyear" name="dog_birthyear" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          {{ /if }}
+
+          {{ if !items.0:product:group && !items.0:product:hike && !items.0:product:nordic_walking && !items.0:product:children_run }}
+
+          <div class="mt-10 border-t border-gray-700 pt-10">
+            <h2 class="text-lg font-medium text-white">{{ trans:checkout.additional_info }}</h2>
+            <div class="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 gap-x-4">
+              <div>
+                <label for="contact_name" class="block text-sm font-medium text-gray-200">{{ trans:checkout.contact_name }}</label>
+                <div class="mt-1">
+                  <input type="text" id="contact_name" name="contact_name" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                </div>
+              </div>
+
+              <div>
+                <label for="contact_phone" class="block text-sm font-medium text-gray-200">{{ trans:checkout.contact_phone }}</label>
+                <div class="mt-1">
+                  <input type="text" id="contact_phone" name="contact_phone" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                </div>
+              </div>
+
+              <div class="col-span-2">
+                <label for="footnote" class="block text-sm font-medium text-gray-200">{{ trans:checkout.footnote }}</label>
+                <div class="mt-1">
+                  <textarea rows="5" name="footnote" id="footnote" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm"></textarea>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          {{ /if }}
+
+          {{ if items.0:product:group }}
+
+
+          <button @click="panel = true" type="button" class="mt-10 w-full border border-green-700 rounded-md shadow-sm py-2 px-3 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-green-500">Podatki o tekmovalcih</button>
+
+          <div class="mt-10 border-t border-gray-700 pt-10">
+            <h2 class="text-lg font-medium text-white">{{ trans:checkout.company_info }}</h2>
+            <div class="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
+              <div>
+                <label for="company_name" class="block text-sm font-medium text-gray-200">{{ trans:checkout.company_name }}</label>
+                <div class="mt-1">
+                  <input type="text" id="company_name" name="company_name" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                </div>
+              </div>
+
+              <div>
+                <label for="company_id" class="block text-sm font-medium text-gray-200">{{ trans:checkout.company_id }}</label>
+                <div class="mt-1">
+                  <input type="text" id="company_id" name="company_id" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                </div>
+              </div>
+
+              <div>
+                <label for="company_address" class="block text-sm font-medium text-gray-200">{{ trans:checkout.company_address }}</label>
+                <div class="mt-1">
+                  <input type="text" name="company_address" id="company_address" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                </div>
+              </div>
+
+              <div>
+                <label for="company_taxpayer" class="block text-sm font-medium text-gray-200">{{ trans:checkout.company_taxpayer }}</label>
+                <div class="relative flex items-center mt-3">
+                  <div class="flex items-center h-5">
+                    <input id="company_taxpayer" name="company_taxpayer" type="checkbox" class="focus:ring-green-500 h-4 w-4 text-green-600 border-gray-300 rounded">
+                  </div>
+                  <div class="ml-3 text-sm">
+                    <label for="company_taxpayer" class="font-medium text-gray-200">{{ trans:checkout.yes }}</label>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="fixed inset-0 overflow-hidden z-10" x-show="panel" aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
+              <div class="absolute inset-0 overflow-hidden">
+
+                <div class="pointer-events-none fixed bottom-0 flex justify-center w-screen top-30 sm:top-16 md:top-22">
+                  <div
+                    x-show="panel"
+                    x-transition:enter="transform transition ease-in-out duration-500 sm:duration-7000"
+                    x-transition:enter-start="-translate-y-full"
+                    x-transition:enter-end="translate-y-0"
+                    x-transition:leave="transform transition ease-in-out duration-500 sm:duration-700"
+                    x-transition:leave-start="translate-y-0"
+                    x-transition:leave-end="-translate-y-full"
+                    class="pointer-events-auto w-screen max-w-screen">
+                    <div class="flex h-full flex-col overflow-y-scroll bg-gray-900 py-8 shadow-xl px-8">
+                      <div class="px-4 sm:px-6">
+                        <div class="flex items-start justify-center">
+                          <h2 class="text-lg font-medium text-white" id="slide-over-title">Tekmovalci</h2>
+                        </div>
+                      </div>
+                      <div class="relative mt-4 flex-1 px-4 sm:px-6">
+                        <!-- Replace with your content -->
+                        <div class="flex flex-col space-y-6">
+                            <div class="-mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                              <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+                                <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+                                  <table class="min-w-full">
+                                    <thead class="bg-gray-700 border-b border-gray-700">
+                                      <tr class="">
+                                        <th scope="col" class="p-2.5  text-left text-sm font-semibold text-white sm:pl-4">{{ trans:checkout.length }}</th>
+                                        <th scope="col" class="p-2.5  text-left text-sm font-semibold text-white sm:pl-4">{{ trans:checkout.name }}</th>
+                                        <th scope="col" class="p-2.5 text-left text-sm font-semibold text-white">{{ trans:checkout.surname }}</th>
+                                        <th scope="col" class="p-2.5 text-left text-sm font-semibold text-white">{{ trans:checkout.shirt_size }}</th>
+                                        <th scope="col" class="p-2.5 text-left text-sm font-semibold text-white">{{ trans:checkout.phone }}</th>
+                                        <th scope="col" class="p-2.5 text-left text-sm font-semibold text-white">{{ trans:checkout.birthyear }}</th>
+                                        <th scope="col" class="p-2.5 text-left text-sm font-semibold text-white">{{ trans:checkout.gender }}</th>
+                                        <th scope="col" class="p-2.5 text-left text-sm font-semibold text-white">{{ trans:checkout.best_time_short }}</th>
+                                        <th scope="col" class="p-2.5  text-left text-sm font-semibold text-white sm:pr-4">{{ trans:checkout.veterans }}</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody class="bg-gray-800">
+                                      {{ items }}
+                                        {{ loop :times="quantity" }}
+                                          {{ partial:checkout.table-row :variant="variant:key" index="{increment}" }}
+                                        {{ /loop }}
+                                      {{ /items }}
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="px-4 sm:px-6">
+                                <div class="flex items-start justify-center">
+                                    <button @click="panel = false" type="button" class="rounded-md max-w-min px-16 py-1 bg-green-600 text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
+                                        {{ trans:checkout.confirm }}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /End replace -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          {{ /if }}
+
+
+          {{ /sc:cart }}
+
+          <div class="mt-10 border-t border-gray-700 pt-10">
+
+
+            <div class="space-y-5">
+
+              {{ sc:cart }}
+
+              {{ if !items.0:product:group && !items.0:product:hike && !items.0:product:nordic_walking && !items.0:product:children_run }}
+
+              <div class="relative flex items-start">
+                <div class="flex items-center h-5">
+                  <input id="dp_vet" name="dp_vet" type="checkbox" class="focus:ring-green-500 h-4 w-4 text-green-600 border-gray-300 rounded">
+                </div>
+                <div class="ml-3 text-sm">
+                  <label for="dp_vet" class="font-medium text-gray-200">{{ trans:checkout.veteran }}</label>
+                </div>
+              </div>
+
+              {{ /if }}
+
+              {{ /sc:cart }}
+              <div class="relative flex items-start">
+                <div class="flex items-center h-5">
+                  <input id="email_notifications" name="email_notifications" type="checkbox" class="focus:ring-green-500 h-4 w-4 text-green-600 border-gray-300 rounded">
+                </div>
+                <div class="ml-3 text-sm">
+                  <label for="email_notifications" class="font-medium text-gray-200">{{ trans:checkout.email_notifications }}</label>
+                </div>
+              </div>
+              <div class="relative flex items-start">
+                <div class="flex items-center h-5">
+                  <input id="sms_notifications" name="sms_notifications" type="checkbox" class="focus:ring-green-500 h-4 w-4 text-green-600 border-gray-300 rounded">
+                </div>
+                <div class="ml-3 text-sm">
+                  <label for="sms_notifications" class="font-medium text-gray-200">{{ trans:checkout.sms_notifications }}</label>
+                </div>
+              </div>
+              <div class="relative flex items-start">
+                <div class="flex items-center h-5">
+                  <input required checked id="terms_and_conditions" name="terms_and_conditions" type="checkbox" class="focus:ring-green-500 h-4 w-4 text-green-600 border-gray-300 rounded">
+                </div>
+                <div class="ml-3 text-sm">
+                  <label for="terms_and_conditions" class="font-medium text-gray-200"><a href="/o-maratonu/splosni-pogoji" target="blank">{{ trans:checkout.terms }}</a></label>
+                </div>
+              </div>
+              <div class="relative flex items-start">
+                <div class="flex items-center h-5">
+                  <input required id="gdpr" checked name="gdpr" type="checkbox" class="focus:ring-green-500 h-4 w-4 text-green-600 border-gray-300 rounded">
+                </div>
+                <div class="ml-3 text-sm">
+                  <label for="gdpr" class="font-medium text-gray-200"><a href="/o-maratonu/splosni-pogoji" target="blank">{{ trans:checkout.gdpr }}</a></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="py-6">
+            {{ if items.0:product:group && {sc:cart:quantityTotal} < 10 }}
+              <button type="submit" disabled class="w-full bg-green-600 disabled:bg-gray-600 border border-transparent rounded-md shadow-sm py-3 px-4 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-green-500">{{ trans:checkout.pay }}</button>
+            {{ else }}
+              <button type="submit" class="w-full bg-green-600 border border-transparent rounded-md shadow-sm py-3 px-4 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-green-500">{{ trans:checkout.pay }}</button>
+            {{ /if }}
+          </div>
+        </div>
+        {{ /sc:cart:update }}
+        <!-- Order summary -->
+        {{ sc:cart }}
+        <div class="mt-10 lg:mt-0">
+          <h2 class="text-lg font-medium text-white">{{ trans:checkout.summary }}</h2>
+          <div class="mt-4 bg-gray-800 border border-gray-700 rounded-lg shadow-sm">
+            <ul role="list" class="divide-y divide-gray-700">
+              {{ items }}
+              <li class="flex py-6 px-4 sm:px-6">
+                <div class="flex-1 flex flex-col">
+                  <div class="flex">
+                    <div class="min-w-0 flex-1">
+                      <h4 class="text-sm">
+                        <span class="font-medium text-gray-200 hover:text-gray-100">{{ trans key="checkout.{ product:title }" }}</span>
+                      </h4>
+                      <p class="mt-1 text-sm text-gray-400">{{ trans key="checkout.{ variant:variant }" }}</p>
+                    </div>
+                    {{ sc:cart:removeItem :item="id" }}
+                        <button type="submit" class="-m-2 p-2 inline-flex text-gray-400 hover:text-gray-500">
+                          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                          </svg>
+                        </button>
+                    {{ /sc:cart:removeItem }}
+                  </div>
+                  <div class="flex-1 pt-4 flex items-end justify-between">
+                    <p class="mt-1 text-sm font-medium text-white">{{ variant:price }}</p>
+                    <p class="mt-1 text-sm font-medium text-white">{{ quantity }}x </p>
+                  </div>
+                </div>
+              </li>
+              {{ /items }}
+            </ul>
+            <dl class="border-t border-gray-700 py-6 px-4 space-y-6 sm:px-6">
+              {{ if {sc:coupon:has} === true }}
+                <div class="flex items-center justify-between mb-2 text-sm">
+                  <span>{{ trans:checkout.coupon_discount }}</span>
+                  <div class="flex space-x-2">
+                    <span>{{ sc:cart:couponTotal }}</span>
+                    {{ sc:coupon:remove }}
+                      <button type="submit" class="-m-2 p-2 inline-flex text-gray-400 hover:text-gray-500">
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                      </button>
+                    {{ /sc:coupon:remove }}
+                  </div>
+                </div>
+              {{ else }}
+              {{ if !items.0:product:group }}
+              {{ sc:coupon:redeem }}
+              <div class="w-full">
+                <label for="coupon" class="block text-sm font-medium text-gray-200">{{ trans:checkout.coupon }}</label>
+                <div class="mt-1 flex space-x-3 rounded-md shadow-sm">
+                  <div class="relative flex items-stretch flex-grow focus-within:z-10">
+                    <input required type="text" id="coupon" name="code" class="bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                  </div>
+                  <button type="submit" class="relative inline-flex items-center space-x-2 px-4 py-2 border border-green-600 text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none">
+                    <span>{{ trans:checkout.apply_coupon }}</span>
+                  </button>
+                </div>
+              </div>
+              {{ /sc:coupon:redeem }}
+              {{ /if }}
+              {{ /if }}
+              <div class="flex items-center justify-between">
+                <dt class="text-base text-white font-medium">{{ trans:checkout.total }}</dt>
+                <dd class="text-base font-medium text-white">{{ sc:cart:total }}</dd>
+              </div>
+            </dl>
+          </div>
+          {{ if items.0:product:group && {sc:cart:quantityTotal} < 10 }}
+            <div class="rounded-md bg-yellow-100 p-4 my-6">
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                        </svg>
+                    </div>
+                    <div class="ml-3">
+                        <h3 class="text-sm font-medium text-yellow-800">{{ trans:checkout.warning }}</h3>
+                    </div>
+                </div>
+            </div>
+        {{ /if }}
+        </div>
+        {{ /sc:cart }}
+      </div>
+</div>
+
+<script>
+    document.addEventListener('load', () => {
+        let checkoutInformationForm = document.getElementById('checkout-information-form')
+        if (checkoutInformationForm) {
+            checkoutInformationForm.addEventListener('submit', (e) => {
+                e.preventDefault()
+                checkoutInformationForm.querySelector('button[type="submit"]').setAttribute('disabled', 'disabled')
+                checkoutInformationForm.submit()
+            })
+        }
+    })
+</script>

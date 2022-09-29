@@ -1,0 +1,285 @@
+<div class="vimeo-container static">
+  <iframe src="https://player.vimeo.com/video/487254221?api=1&background=1&autoplay=1&loop=1"
+          allowfullscreen="allowfullscreen"
+          frameborder="0"></iframe>
+  <div
+       class="font-bold text-white text-3xl md:text-5xl absolute z-10 inset-x-0 bottom-0 backdrop-blur-sm bg-black/30 py-8 px-8 text-center">
+    {{ trans:homepage.marathon }} <br>
+    <span class="text-3xl"> 1.10. in 2.10.2022 </span><br>
+    <a class="mt-4 border-2 border-white px-4 py-2 text-xl hover:bg-green-500 transition-all duration-300 font-bold popup-vimeo"
+       href="https://www.youtube.com/watch?v=JZ3bNH8Rmpg">{{ trans:homepage.aftermovie }}</a>
+  </div>
+</div>
+<!-- COUNTDOWN -->
+<div class="container mx-auto text-center pt-12">
+  <h1 id="headline"
+      class="text-gray-500 font-bold text-2xl mb-4">{{ trans:homepage.until }}</h1>
+  <div id="countdown"
+       class="text-gray-300">
+    <ul>
+      <li class="text-sm md:text-xl"><span class="text-3xl md:text-5xl h-10 md:h-16"
+              id="days"></span>{{ trans:homepage.days }}</li>
+      <li class="text-sm md:text-xl"><span class="text-3xl md:text-5xl h-10 md:h-16"
+              id="hours"></span>{{ trans:homepage.hours }}</li>
+      <li class="text-sm md:text-xl"><span class="text-3xl md:text-5xl h-10 md:h-16"
+              id="minutes"></span>{{ trans:homepage.minutes }}</li>
+      <li class="text-sm md:text-xl"><span class="text-3xl md:text-5xl h-10 md:h-16"
+              id="seconds"></span>{{ trans:homepage.seconds }}</li>
+    </ul>
+  </div>
+</div>
+<!-- /COUNTDOWN -->
+
+
+<div class="max-w-7xl mx-auto py-12 px-8">
+  <h2 class="text-5xl font-bold text-gray-600">{{ trans:homepage.news }}</h2>
+</div>
+<section class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 px-8 pb-12">
+
+  {{ collection:blog limit="4" sort="date:desc" }}
+  <a href="{{ url }}"
+     class="group">
+    {{ responsive:featured_image webp="true" avif="false" ratio="16/9" }}
+    <span class="text-green-600 text-sm group-hover:text-green-500">{{ date }}</span><br>
+    <h2 class="font-bold text-base text-gray-300 group-hover:text-white">{{ title }}</h2>
+    <div class="text-sm leading-6 mt-2 text-gray-300 group-hover:text-white">{{ intro }}</div>
+  </a>
+  {{ /collection:blog }}
+
+</section>
+{{# <div class="max-w-7xl mx-auto py-12 pt-24 px-4 text-6xl font-bold text-gray-600"><h2>Zakaj na <span class="text-gray-300">Novomeški 1/2 maraton</span> ?</h2></div> #}}
+
+
+  <div class="bg-gray-900 overflow-hidden">
+
+    <div class="relative max-w-7xl mx-auto pt-12 pb-12 px-8 border-t border-gray-700">
+      <div class="relative lg:grid lg:grid-cols-3 lg:gap-x-8 items-center">
+        <div class="lg:col-span-1">
+          <h2 class="text-3xl font-extrabold tracking-tight text-gray-600 sm:text-4xl">{{ trans:homepage.why }} <span
+                  class="text-gray-300">{{ trans:homepage.marathon_2 }}</span> ?</h2>
+        </div>
+        <dl class="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
+          <div>
+            <dt>
+              <div class="flex rounded-md text-white items-center">
+                <!-- Heroicon name: outline/globe-alt -->
+                <span class="text-green-500">
+                  <i class="fa-solid fa-2x fa-face-laugh-squint"></i>
+                </span>
+                <span class="font-bold text-lg text-green-500 ml-4">{{ trans:homepage.why_1_title }}</span>
+              </div>
+
+            </dt>
+            <dd class="mt-2 text-base text-gray-400">{{ trans:homepage.why_1 }}</dd>
+          </div>
+
+          <div>
+            <dt>
+              <div class="flex rounded-md text-white items-center">
+                <!-- Heroicon name: outline/globe-alt -->
+                <span class="text-green-500">
+                  <i class="fa-solid fa-2x fa-person-running"></i>
+                </span>
+                <span class="font-bold text-lg text-green-500 ml-4">{{ trans:homepage.why_2_title }}</span>
+              </div>
+
+            </dt>
+            <dd class="mt-2 text-base text-gray-400">{{ trans:homepage.why_2 }}</dd>
+          </div>
+
+          <div>
+            <dt>
+              <div class="flex rounded-md text-white items-center">
+                <!-- Heroicon name: outline/globe-alt -->
+                <span class="text-green-500">
+                  <i class="fa-solid fa-2x fa-box-open-full"></i>
+                </span>
+                <span class="font-bold text-lg text-green-500 ml-4">{{ trans:homepage.why_3_title }}</span>
+              </div>
+
+            </dt>
+            <dd class="mt-2 text-base text-gray-400">{{ trans:homepage.why_3 }}</dd>
+          </div>
+
+          <div>
+            <dt>
+              <div class="flex rounded-md text-white items-center">
+                <!-- Heroicon name: outline/globe-alt -->
+                <span class="text-green-500">
+                  <i class="fa-solid fa-2x fa-lightbulb-on"></i>
+                </span>
+                <span class="font-bold text-lg text-green-500 ml-4">{{ trans:homepage.why_4_title }}</span>
+              </div>
+
+            </dt>
+            <dd class="mt-2 text-base text-gray-400">{{ trans:homepage.why_4 }}
+            </dd>
+          </div>
+        </dl>
+
+      </div>
+      <a href="{{ link id='396d7104-17e8-43a8-9fdd-ebb35daf6c2e' }}"
+         class="mt-20 flex w-auto sm:w-1/3 mx-auto items-center justify-center px-24 py-5 border border-transparent text-base font-medium rounded-md bg-green-500 text-white hover:bg-green-600">{{ trans:homepage.register }}</a>
+    </div>
+    <a href="https://www.terme-krka.com/si/sl/korpo-akcije/punce-gremo-me-po-svoje" target="blank">
+        <img src="/img/banner.jpg" class="mx-auto" alt="">
+    </a>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+          integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet"
+        href=" https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+  <script>
+    $(function() {
+      $('.popup-youtube, .popup-vimeo').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: true,
+        fixedContentPos: false
+      });
+    });
+  </script>
+  <script>
+    (function() {
+      const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+      //I'm adding this section so I don't have to keep updating this pen every year :-)
+      //remove this if you don't need it
+      let today = new Date(),
+        dd = String(today.getDate()).padStart(2, "0"),
+        mm = String(today.getMonth() + 1).padStart(2, "0"),
+        yyyy = today.getFullYear(),
+        nextYear = yyyy + 1,
+        dayMonth = "10/01/",
+        birthday = dayMonth + yyyy;
+
+      today = mm + "/" + dd + "/" + yyyy;
+      if (today > birthday) {
+        birthday = dayMonth + nextYear;
+      }
+      //end
+
+      const countDown = new Date(birthday).getTime(),
+        x = setInterval(function() {
+          const now = new Date().getTime(),
+            distance = countDown - now;
+
+          (document.getElementById("days").innerText = Math.floor(
+            distance / day
+          )),
+          (document.getElementById("hours").innerText = Math.floor(
+            (distance % day) / hour
+          )),
+          (document.getElementById("minutes").innerText = Math.floor(
+            (distance % hour) / minute
+          )),
+          (document.getElementById("seconds").innerText = Math.floor(
+            (distance % minute) / second
+          ));
+
+          //do something later when date is reached
+          if (distance < 0) {
+            document.getElementById("headline").innerText =
+              "It's my birthday!";
+            document.getElementById("countdown").style.display = "none";
+            document.getElementById("content").style.display = "block";
+            clearInterval(x);
+          }
+          //seconds
+        }, 0);
+    })();
+
+    var slideWrapper = $(".main-slider"),
+      iframes = slideWrapper.find('.embed-player'),
+      lazyImages = slideWrapper.find('.slide-image'),
+      lazyCounter = 0;
+
+    // POST commands to YouTube or Vimeo API
+    function postMessageToPlayer(player, command) {
+      if (player == null || command == null) return;
+      player.contentWindow.postMessage(JSON.stringify(command), "*");
+    }
+
+    // Resize player
+    function resizePlayer(iframes, ratio) {
+      if (!iframes[0]) return;
+      var win = $(".main-slider"),
+        width = win.width(),
+        playerWidth,
+        height = win.height(),
+        playerHeight,
+        ratio = ratio || 16 / 9;
+
+      iframes.each(function() {
+        var current = $(this);
+        if (width / ratio < height) {
+          playerWidth = Math.ceil(height * ratio);
+          current.width(playerWidth).height(height).css({
+            left: (width - playerWidth) / 2,
+            top: 0
+          });
+        } else {
+          playerHeight = Math.ceil(width / ratio);
+          current.width(width).height(playerHeight).css({
+            left: 0,
+            top: (height - playerHeight) / 2
+          });
+        }
+      });
+    }
+
+    // DOM Ready
+    $(function() {
+      // Initialize
+      slideWrapper.on("init", function(slick) {
+        slick = $(slick.currentTarget);
+        setTimeout(function() {
+          playPauseVideo(slick, "play");
+        }, 1000);
+        resizePlayer(iframes, 16 / 9);
+      });
+      slideWrapper.on("beforeChange", function(event, slick) {
+        slick = $(slick.$slider);
+        playPauseVideo(slick, "pause");
+      });
+      slideWrapper.on("afterChange", function(event, slick) {
+        slick = $(slick.$slider);
+        playPauseVideo(slick, "play");
+      });
+      slideWrapper.on("lazyLoaded", function(event, slick, image, imageSource) {
+        lazyCounter++;
+        if (lazyCounter === lazyImages.length) {
+          lazyImages.addClass('show');
+          // slideWrapper.slick("slickPlay");
+        }
+      });
+
+      //start the slider
+      slideWrapper.slick({
+        // fade:true,
+        autoplaySpeed: 4000,
+        lazyLoad: "progressive",
+        speed: 600,
+        arrows: false,
+        dots: true,
+        cssEase: "cubic-bezier(0.87, 0.03, 0.41, 0.9)"
+      });
+    });
+
+    // Resize event
+    $(window).on("resize.slickVideoPlayer", function() {
+      resizePlayer(iframes, 16 / 9);
+    });
+  </script>

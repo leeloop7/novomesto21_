@@ -1,0 +1,99 @@
+<div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800 sticky top-0 z-50">
+  <div x-data="{ open: false, cart: false }"
+       class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+    <div class="p-4 flex flex-row items-center justify-between">
+      <a href="/"
+         class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">
+        <img id="logo"
+             class="w-32"
+             src="/img/logo_nm.png"
+             alt="">
+      </a>
+      <div class="hidden md:block text-center pl-8">
+        <div class="mb-2 font-bold">{{ trans:header.date}}</div>
+        <a href=""
+           class="text-sm font-bold bg-green-500 hover:bg-green-600 transition-all duration-300 text-white p-2 px-6 rounded-full mt-2">{{ trans:header.signup}}</a>
+      </div>
+      <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
+              @click="open = !open">
+        <svg fill="currentColor"
+             viewBox="0 0 20 20"
+             class="w-6 h-6">
+          <path x-show="!open"
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+          <path x-show="open"
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+    <nav :class="{'flex': open, 'hidden': !open}"
+         class="relative flex-col md:items-center flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+      {{ nav from="pages" include_home="true" }}
+      <a class="px-4 py-2 mt-2 text-md font-semibold text-gray-900 rounded-lg dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+         href="{{ url }}">{{title}}</a>
+      {{ /nav  }}
+      {{ locales }}
+        {{ if !is_current }}
+            <a href="{{ permalink }}" class="px-4 py-2 mt-2 md:mt-0">
+               <img src="/img/{{ locale:name }}.svg" class="h-4 rounded-md">
+            </a>
+        {{ /if }}
+      {{ /locales }}
+      <div class="ml-4 flow-root text-sm lg:relative">
+        <button @click="cart = !cart" type="button" class="hidden md:flex group -m-2 p-2 items-center" aria-expanded="false">
+            <!-- Heroicon name: outline/shopping-bag -->
+            <svg class="flex-shrink-0 h-6 w-6 text-gray-400 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+            </svg>
+            <span class="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">{{ sc:cart:count }}</span>
+        </button>
+        <div
+            x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="opacity-0"
+            x-transition:enter-end="opacity-100"
+            x-transition:leave="transition ease-in duration-150"
+            x-transition:leave-start="opacity-100"
+            x-transition:leave-end="opacity-0"
+            x-show="cart" class="absolute top-16 inset-x-0 mt-px pb-6 bg-white shadow-lg sm:px-2 lg:top-full lg:left-auto lg:right-0 lg:mt-3 lg:-mr-1.5 lg:w-80 lg:rounded-lg lg:ring-1 lg:ring-black lg:ring-opacity-5">
+          <h2 class="sr-only">Shopping Cart</h2>
+
+          <form class="max-w-2xl mx-auto px-4">
+            <ul role="list" class="divide-y divide-gray-200">
+              <li class="py-6 flex items-center">
+                <img src="https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg" alt="Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt." class="flex-none w-16 h-16 rounded-md border border-gray-200">
+                <div class="ml-4 flex-auto">
+                  <h3 class="font-medium text-gray-900">
+                    <a href="#">Throwback Hip Bag</a>
+                  </h3>
+                  <p class="text-gray-500">Salmon</p>
+                </div>
+              </li>
+
+              <li class="py-6 flex items-center">
+                <img src="https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-02.jpg" alt="Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch." class="flex-none w-16 h-16 rounded-md border border-gray-200">
+                <div class="ml-4 flex-auto">
+                  <h3 class="font-medium text-gray-900">
+                    <a href="#">Medium Stuff Satchel</a>
+                  </h3>
+                  <p class="text-gray-500">Blue</p>
+                </div>
+              </li>
+
+              <!-- More products... -->
+            </ul>
+
+            <button type="submit" class="w-full bg-green-500 border border-transparent rounded-md shadow-sm py-2 px-4 text-sm font-medium text-white hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-green-400">Checkout</button>
+
+            <p class="mt-6 text-center">
+              <a href="#" class="text-sm font-medium text-green-500 hover:text-green-400">View Shopping Bag</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>

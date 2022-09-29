@@ -1,0 +1,76 @@
+<div class="px-3 py-2 border appearance-none text-white placeholder-gray-100 bg-gray-800 block w-full border-gray-700 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm" id="card-element"></div>
+<input id="stripePaymentMethod" type="hidden" name="payment_method">
+
+<script src="https://js.stripe.com/v3/"></script>
+<script>
+    const checkoutForm = document.getElementById('checkout-form')
+
+    var stripe = Stripe('{{ gateway-config:key }}');
+    var elements = stripe.elements();
+
+    const card = elements.create('card', {
+        hidePostalCode: true,
+        style: {
+        base: {
+          iconColor: '#fff',
+          color: '#fff',
+          fontWeight: '400',
+          fontFamily: 'Roboto, Open Sans, Segoe UI, sans-serif',
+          fontSize: '14px',
+          fontSmoothing: 'antialiased',
+          ':-webkit-autofill': {
+            color: '#fce883',
+          },
+          '::placeholder': {
+            color: '#9ca3af',
+          },
+        },
+        invalid: {
+          iconColor: '#FFC7EE',
+          color: '#FFC7EE',
+        }
+      }
+    });
+    card.mount('#card-element');
+
+    card.addEventListener('change', ({error}) => {
+        const displayError = document.getElementById('card-errors');
+
+        if (error) {
+            alert('There was an issue when loading: '+error.message);
+        }
+    });
+
+    function confirmPayment() {
+        stripe.confirmCardPayment('{{ client_secret }}', {
+            payment_method: {
+                card: card,
+            },
+        }).then(function (result) {
+            if (result.error) {
+                alert(result.error.message);
+
+                checkoutForm.querySelector('button[type="submit"]').removeAttribute('disabled')
+            } else if (result.paymentIntent.status === 'succeeded') {
+                var paymentMethod = document.getElementById('stripePaymentMethod');
+                paymentMethod.value = result.paymentIntent.payment_method;
+
+                document.getElementById('checkout-form').submit();
+            }
+        });
+    }
+
+    checkoutForm.addEventListener('submit', (e) => {
+        e.preventDefault()
+
+        checkoutForm.querySelector('button[type="submit"]').setAttribute('disabled', 'disabled')
+
+        const gateway = document.getElementsByName('gateway')[0].value;
+
+        if (gateway == '{{ formatted_class }}') {
+            confirmPayment();
+        } else {
+            document.getElementById('checkout-form').submit();
+        }
+    })
+</script>

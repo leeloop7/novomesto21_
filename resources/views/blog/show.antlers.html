@@ -1,0 +1,27 @@
+<div class="max-w-5xl mx-auto">
+  {{ responsive:featured_image webp="true" avif="false" ratio="16/9" }}
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-4xl text-center text-white font-bold mt-6 p-6">{{ title }}</h1>
+    <div class="text-center text-green-600 mt-2 p-3 text-xs uppercase">
+      Published on {{ date }} by {{ author:name }}
+    </div>
+    {{ intro }}
+    <article class="space-y-4 mt-8 text-sm text-gray-200 leading-loose text-justify">
+      {{ bard_field }}
+    </article>
+    <section class="mt-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
+      {{ assets:gallery container="assets" }}
+      <img src="{{ url }}"
+           class="aspect-auto glightbox rounded-md"
+           data-gallery="gallery" />
+      {{ /assets:gallery }}
+    </section>
+  </div>
+</div>
+
+{{ section:scripts }}
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+<script type="text/javascript">
+  const lightbox = GLightbox();
+</script>
+{{ /section:scripts }}

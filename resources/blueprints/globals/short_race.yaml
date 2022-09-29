@@ -1,0 +1,28 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: short_race
+        field:
+          display: 'Short Race'
+          type: integer
+          icon: integer
+          listable: hidden
+          instructions_position: above
+      -
+        handle: long_race
+        field:
+          display: 'Long Race'
+          type: integer
+          icon: integer
+          listable: hidden
+          instructions_position: above
+      -
+        handle: halfmarathon
+        field:
+          display: Halfmarathon
+          type: integer
+          icon: integer
+          listable: hidden
+          instructions_position: above

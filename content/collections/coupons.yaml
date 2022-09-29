@@ -1,0 +1,6 @@
+title: Coupons
+sites:
+  - default
+  - english
+propagate: false
+revisions: false

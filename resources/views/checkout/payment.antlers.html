@@ -1,0 +1,22 @@
+{{ if {sc:cart:count} === 0 }}
+    {{ redirect to="/cart" }}
+{{ /if }}
+
+{{ if {sc:cart:free} === false }}
+  {{ sc:checkout:mollie redirect="{ link id='bc0c5a1e-7728-400f-bac5-18a0083b7eca' }" }}
+{{ else }}
+<div class="max-w-md mx-auto pt-8 pb-24 relative">
+  {{ sc:checkout id="checkout-form" redirect="{ link id='bc0c5a1e-7728-400f-bac5-18a0083b7eca' }" }}
+  <h2 class="text-lg font-medium text-white">{{ page:title }}</h2>
+  <div class="mt-2 mb-4 text-gray-300 text-base">
+    {{ trans:checkout.nothing_to_pay }}
+  </div>
+  <div class="w-full">
+      <button type="submit"
+          class="w-full bg-green-600 border border-transparent rounded-md shadow-sm py-3 px-4 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-green-500">
+            Zaključi
+      </button>
+  </div>
+  {{ /sc:checkout }}
+</div>
+{{ /if }}

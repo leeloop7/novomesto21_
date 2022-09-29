@@ -1,0 +1,29 @@
+<div class="max-w-7xl mx-auto grid grid-cols-4 gap-8 px-8">
+  <div class="col-span-4 md:col-span-1">
+    <ul id="nav"
+        class="nav navbar-nav">
+      {{ nav from="/{segment_1}" max_depth="1" }}
+      <li
+          class="dropdown bg-gray-700 hover:bg-green-500 transition-background duration-300 {{ if is_current }}bg-green-700{{ /if }} text-base">
+        <a class="w-full block px-4 py-1"
+           href="{{ url }}">
+          {{ title }}
+        </a>
+      </li>
+      {{ /nav }}
+    </ul>
+  </div>
+  <div id="content"
+       class="col-span-4 md:col-span-3 text-base">
+    {{ if featured_image }}
+    {{ responsive:featured_image webp="true" avif="false" ratio="16/9" class="aspect-video rounded-md shadow-xl mb-4"}}
+    {{ /if }}
+
+    <h1 class="text-4xl font-bold text-gray-600 mb-6">{{ title }}</h1>
+    {{ code_field }}
+    <br>
+    {{ bard_field }}
+    <br>
+    {{ code_field_2 }}
+  </div>
+</div>

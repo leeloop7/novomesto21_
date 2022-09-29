@@ -1,0 +1,14 @@
+name: 'Mija Krnc Kogovšek'
+super: true
+id: 7122dacc-c21d-4880-a7fd-6be3663ed7b0
+password_hash: $2y$10$hVdjk8hPBG5OcsZGv/zowu9e6m1BWuMi3v4EGVElhY7RwUmU0/wyy
+preferences:
+  collections:
+    orders:
+      columns:
+        - customer
+        - gender
+        - shirt_size
+        - paid_date
+        - is_paid
+        - grand_total
