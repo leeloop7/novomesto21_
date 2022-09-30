@@ -9,6 +9,8 @@ tree:
     id: 552a1f14-a9a8-4e8b-af52-9c8cf9f85001
     title: 'LIST OF REGISTRATIONS'
     url: 'https://protime.si/sl_si/novomeski-1-2-polmaraton-2022/'
+    data:
+      open_in_new_tab: true
   -
     id: 8f028dd2-2562-4c80-bf36-16116c33dadf
     entry: 4bf41bb0-f8a9-4e45-a19d-e041c662f776
