@@ -1,0 +1,15 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: open_in_new_tab
+        field:
+          default: false
+          display: 'Open in new tab'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
