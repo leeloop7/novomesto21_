@@ -12,6 +12,8 @@ tree:
     id: 4c161cce-3b11-4bc9-b0bf-b209a012a97e
     title: 'SEZNAM PRIJAVLJENIH'
     url: 'https://protime.si/sl_si/novomeski-1-2-polmaraton-2022/'
+    data:
+      open_in_new_tab: true
   -
     id: 1d67084d-feba-4fe6-a73b-0176a6663bbc
     entry: 2fd4e974-e551-4b04-9d8c-059fed248879
