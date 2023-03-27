@@ -798,16 +798,27 @@ bard_field:
     content:
       -
         type: text
-        text: 'REKREATIVNI TEK 5 km'
+        text: 'SPLOŠNA DOLOČILA IN POGOJI'
   -
     type: paragraph
     content:
       -
         type: text
-        text: "Trasa rekreativnega teka\_poteka po mestnih ulicah Novega mesta. Štart in cilj rekreativnega teka je na Seidlovi cesti. Trasa teka\_je ravna z lažjim vzponom na 3km. \_Štart rekreativnega teka je ob 10:00 skupaj s polmaratonom."
+        text: 'Preberi si '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://www.novomesto21.si/o-maratonu/splosni-pogoji'
+              rel: null
+              target: null
+              title: null
+        text: 'splošna določila in pogoje'
 template: page
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1679925109
+updated_at: 1679925399
 featured_image: nm_polmaraton_22_nedelja_059.JPG
 ---
