@@ -1,7 +1,7 @@
 ---
 id: ad09968e-d96e-4105-93a6-bad60bc3384c
 blueprint: pages
-title: TRASA
+title: 10km
 redirect: /trasa/polmaraton-21-097-m
 bard_field:
   -
@@ -11,33 +11,121 @@ bard_field:
     content:
       -
         type: text
-        text: POLMARATON
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Trasa proge je ravninska s tremi lažjimi vzponi. Večina trase poteka po trdi asfaltni podlagi. Vmes sta dva krajša makadamska odseka. Štart in cilj je na Seidlovi cesti. Tekači najprej naredijo en krog dolg 6,5 km (trasa rekreativnega teka), nato pa še en večji krog ob dolini reke Krke. '
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Limit polmaratona je 3h. Tekači na 21.097 m, ki boste imeli na vmesnem času na 6,5 km slabši čas od 50 min bruto, boste preusmerjeni na progo 10km teka in uvrščeni v rezultatsko listo teka na 10km.'
-  -
-    type: heading
-    attrs:
-      level: 2
-    content:
-      -
-        type: text
         text: '10km TEK'
   -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'ŠTART 1.10.2023 ob 10:00 uri'
+  -
     type: paragraph
     content:
       -
         type: text
-        text: 'Prvi del 10km trase poteka po enaki poti, kot polmaraton. Po pretečenem prvem 6,5 kilometerskem krogu, trasa 10km zavije levo v center mesta. Trasa nadaljuje čez prenovljeni Glavni trg in kandijski most proti Grmu, kjer pri Osnovni šoli Grm zavije na Smrečnikovo ulico vse do Šmihelske ceste kjer zavije proga desno vse do Šmihelskega mosta in v cilj na Seidlovi cesti. Trasa je v celoti asfaltirana.'
+        text: 'Štart 10km teka je skupaj s polmaratonom in tekom na 5km. Prvi del tras'
+  -
+    type: paragraph
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'ŠTARTNI PAKET'
+  -
+    type: bulletList
+    content:
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Štartna številka s čipom za elektronsko merjenje časov'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Vmesni čas na 5km'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'SMS sporočilo o doseženem času'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Okrepčila na progi in v cilju.'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Brezalkoholno izotonično pivo Erdinger Alkoholfrei v cilju'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Tekaško darilo Novomeškega polmaratona,'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Darilo dolenjskega okolja'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Velika spominska medalja za vsakega tekača'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Promocijska darila'
+  -
+    type: paragraph
   -
     type: heading
     attrs:
@@ -45,7 +133,108 @@ bard_field:
     content:
       -
         type: text
-        text: 'REKREATIVNI TEK 6,5 km'
+        text: PRIJAVNINA
+  -
+    type: table
+    content:
+      -
+        type: tableRow
+        content:
+          -
+            type: tableCell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth: null
+            content:
+              -
+                type: paragraph
+          -
+            type: tableCell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth: null
+            content:
+              -
+                type: paragraph
+          -
+            type: tableCell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth: null
+            content:
+              -
+                type: paragraph
+      -
+        type: tableRow
+        content:
+          -
+            type: tableCell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth: null
+            content:
+              -
+                type: paragraph
+          -
+            type: tableCell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth: null
+            content:
+              -
+                type: paragraph
+          -
+            type: tableCell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth: null
+            content:
+              -
+                type: paragraph
+      -
+        type: tableRow
+        content:
+          -
+            type: tableCell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth: null
+            content:
+              -
+                type: paragraph
+          -
+            type: tableCell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth: null
+            content:
+              -
+                type: paragraph
+          -
+            type: tableCell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth: null
+            content:
+              -
+                type: paragraph
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        text: 'REKREATIVNI TEK 5 km'
   -
     type: paragraph
     content:
@@ -53,9 +242,8 @@ bard_field:
         type: text
         text: "Trasa rekreativnega teka\_poteka po mestnih ulicah Novega mesta. Štart in cilj rekreativnega teka je na Seidlovi cesti. Trasa teka\_je ravna z lažjim vzponom na 3km. \_Štart rekreativnega teka je ob 10:00 skupaj s polmaratonom."
 template: page
-featured_image:
-  - jakasuln-2060.jpg
+featured_image: jakasuln-2060.jpg
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1648372020
+updated_at: 1679923542
 ---
