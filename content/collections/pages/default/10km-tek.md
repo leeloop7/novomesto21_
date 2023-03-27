@@ -1,7 +1,7 @@
 ---
 id: 70a7e007-1600-4d5a-bbda-ecb7f83bfcdc
 blueprint: pages
-title: '10KM TEK'
+title: '10 KM'
 bard_field:
   -
     type: heading
@@ -122,6 +122,9 @@ bard_field:
     content:
       -
         type: text
+        marks:
+          -
+            type: bold
         text: PRIJAVNINA
   -
     type: table
@@ -798,6 +801,9 @@ bard_field:
     content:
       -
         type: text
+        marks:
+          -
+            type: bold
         text: 'SPLOŠNA DOLOČILA IN POGOJI'
   -
     type: paragraph
@@ -819,6 +825,6 @@ bard_field:
 template: page
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1679925399
+updated_at: 1679925489
 featured_image: nm_polmaraton_22_nedelja_059.JPG
 ---
