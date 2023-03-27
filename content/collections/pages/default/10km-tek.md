@@ -6,14 +6,6 @@ bard_field:
   -
     type: heading
     attrs:
-      level: 2
-    content:
-      -
-        type: text
-        text: 10km
-  -
-    type: heading
-    attrs:
       level: 3
     content:
       -
@@ -27,11 +19,11 @@ bard_field:
     content:
       -
         type: text
-        text: 'Štart 10km teka je skupaj s polmaratonom in tekom na 5km. Npva proga je lažja in hitrejša ter uradno izmerjena.'
+        text: 'Štart 10km teka je skupaj s polmaratonom in tekom na 5km. Npva proga je lažja in hitrejša ter tudi uradno izmerjena.'
   -
-    type: paragraph
-  -
-    type: paragraph
+    type: heading
+    attrs:
+      level: 2
     content:
       -
         type: text
@@ -131,17 +123,6 @@ bard_field:
       -
         type: text
         text: PRIJAVNINA
-  -
-    type: heading
-    attrs:
-      level: 3
-    content:
-      -
-        type: text
-        marks:
-          -
-            type: bold
-        text: "10KM TEK\_"
   -
     type: table
     content:
@@ -660,17 +641,6 @@ bard_field:
             type: bold
         text: 'TEKMOVALNE KATEGORIJE'
   -
-    type: heading
-    attrs:
-      level: 2
-    content:
-      -
-        type: text
-        marks:
-          -
-            type: bold
-        text: 'POLMARATON (21.097 m) – štart ob 10.05:'
-  -
     type: paragraph
     content:
       -
@@ -838,6 +808,6 @@ bard_field:
 template: page
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1679924978
+updated_at: 1679925109
 featured_image: nm_polmaraton_22_nedelja_059.JPG
 ---
