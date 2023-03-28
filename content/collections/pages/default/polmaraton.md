@@ -6,7 +6,7 @@ template: page
 featured_image: nm_polmaraton_22_nedelja_031.JPG
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1679987308
+updated_at: 1679987563
 bard_field:
   -
     type: heading
@@ -19,23 +19,6 @@ bard_field:
           -
             type: bold
         text: 'ŠTART 1.10.2023 ob 10:00 uri'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: ' Nova proga je lažja in hitrejša ter tudi uradno izmerjena. Oglej si'
-      -
-        type: text
-        marks:
-          -
-            type: link
-            attrs:
-              href: 'https://www.novomesto21.si/trasa/polmaraton-21-097-m'
-              rel: null
-              target: _blank
-              title: null
-        text: ' novo progo'
   -
     type: heading
     attrs:
@@ -131,6 +114,161 @@ bard_field:
               -
                 type: text
                 text: 'Promocijska darila'
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'TEKMOVALNE KATEGORIJE'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "moški A\_ do 29 let (rojeni 2008 –1994)"
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "moški B\_ 30 - 34 let (rojeni 1993–1989)"
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "moški C\_ 35 - 39 let (rojeni 1988–1984)"
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "moški D\_ 40 - 44 let (rojeni 1983–1979)"
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "moški E\_ 45 - 49 let (rojeni 1978–1974)"
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "moški F\_ 50 - 54 let (rojeni 1973–1969)"
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "moški G\_ 55 - 59 let (rojeni 1968–1964)"
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "moški H\_ 60 - 64 let (rojeni 1963–1959)"
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "moški I \_ 65–69 let (rojeni 1958–1954)"
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "moški J\_ nad 70 let (rojeni 1953 in starejši)"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "ženske A\_ do 29 let (rojene 2008 –1994) "
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "ženske B\_ 30 - 34 let (rojene 1993–1989) "
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "ženske C\_ 35 - 39 let (rojene 1988–1984) "
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "ženske D\_ 40 - 44 let (rojene 1983–1979) "
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "ženske E\_ 45 - 49 let (rojene 1978–1974) "
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "ženske F\_ 50 - 54 let (rojene 1973–1969) "
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "ženske G\_ 55 - 59 let (rojene 1968–1964) "
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "ženske H\_ 60 - 64 let (rojene 1963–1959)"
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "ženske I\_ 65 - 69 let (rojene 1958–1954) "
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "ženske J\_ nad 70 let (rojene 1953 in starejše)"
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        text: 'EKIPNO TEKMOVANJE V POLMARATONU'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Za končni čas ekipe šteje pet najhitrejših tekačev v polmaratonu (istega kluba/skupine), od katerih morajo biti vsaj dve tekačici ženskega spola. Prve tri ekipe bodo nagrajene. Skupinska prijava ni pogoj!'
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'PROGA '
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Zaradi načrtovane prenove lesenega mostu v Lokah smo morali spremeniti progo. Nova proga je bolj ravna in hitrejša, speljali pa smo jo preko nove brvi arhitekta Marjana Pipenbaherja v Irči vasi. Proga je tudi uradno izmerjena. Oglej si'
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://www.novomesto21.si/trasa/polmaraton-21-097-m'
+              rel: null
+              target: _blank
+              title: null
+        text: ' novo progo'
   -
     type: heading
     attrs:
@@ -648,133 +786,6 @@ bard_field:
       -
         type: text
         text: "Po tem datumu pa se zaračunajo administrativni stroški v višini 5 eur. Sprememba proge je brezplačna v kolikor je razdalja enaka ali krajša. V primeru spremembe na daljšo razdaljo se zaračuna razlika v\_ ceni ob datumu prijave."
-  -
-    type: heading
-    attrs:
-      level: 2
-    content:
-      -
-        type: text
-        marks:
-          -
-            type: bold
-        text: 'TEKMOVALNE KATEGORIJE'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: "moški A\_ do 29 let (rojeni 2008 –1994)"
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "moški B\_ 30 - 34 let (rojeni 1993–1989)"
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "moški C\_ 35 - 39 let (rojeni 1988–1984)"
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "moški D\_ 40 - 44 let (rojeni 1983–1979)"
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "moški E\_ 45 - 49 let (rojeni 1978–1974)"
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "moški F\_ 50 - 54 let (rojeni 1973–1969)"
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "moški G\_ 55 - 59 let (rojeni 1968–1964)"
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "moški H\_ 60 - 64 let (rojeni 1963–1959)"
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "moški I \_ 65–69 let (rojeni 1958–1954)"
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "moški J\_ nad 70 let (rojeni 1953 in starejši)"
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: "ženske A\_ do 29 let (rojene 2008 –1994) "
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "ženske B\_ 30 - 34 let (rojene 1993–1989) "
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "ženske C\_ 35 - 39 let (rojene 1988–1984) "
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "ženske D\_ 40 - 44 let (rojene 1983–1979) "
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "ženske E\_ 45 - 49 let (rojene 1978–1974) "
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "ženske F\_ 50 - 54 let (rojene 1973–1969) "
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "ženske G\_ 55 - 59 let (rojene 1968–1964) "
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "ženske H\_ 60 - 64 let (rojene 1963–1959)"
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "ženske I\_ 65 - 69 let (rojene 1958–1954) "
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "ženske J\_ nad 70 let (rojene 1953 in starejše)"
-  -
-    type: heading
-    attrs:
-      level: 2
-    content:
-      -
-        type: text
-        text: 'EKIPNO TEKMOVANJE V POLMARATONU'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Za končni čas ekipe šteje pet najhitrejših tekačev v polmaratonu (istega kluba/skupine), od katerih morajo biti vsaj dve tekačici ženskega spola. Prve tri ekipe bodo nagrajene. Skupinska prijava ni pogoj!'
   -
     type: heading
     attrs:
