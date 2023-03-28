@@ -6,7 +6,7 @@ template: page
 featured_image: nm_polmaraton_22_nedelja_031.JPG
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1679926477
+updated_at: 1679987222
 bard_field:
   -
     type: heading
@@ -24,7 +24,18 @@ bard_field:
     content:
       -
         type: text
-        text: ' Npva proga je lažja in hitrejša ter tudi uradno izmerjena.'
+        text: ' Nova proga je lažja in hitrejša ter tudi uradno izmerjena. Oglej si'
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://www.novomesto21.si/trasa/polmaraton-21-097-m'
+              rel: null
+              target: _blank
+              title: null
+        text: ' novo progo'
   -
     type: heading
     attrs:
@@ -56,7 +67,7 @@ bard_field:
             content:
               -
                 type: text
-                text: 'Vmesni čas na 5km'
+                text: 'Vmesni čas na 5km, 10km in 15km'
       -
         type: listItem
         content:
@@ -74,7 +85,7 @@ bard_field:
             content:
               -
                 type: text
-                text: 'Okrepčila na progi in v cilju.'
+                text: 'Okrepčila na progi in v cilju'
       -
         type: listItem
         content:
@@ -92,7 +103,7 @@ bard_field:
             content:
               -
                 type: text
-                text: 'Tekaško darilo Novomeškega polmaratona,'
+                text: 'Tekaško darilo Novomeškega polmaratona'
       -
         type: listItem
         content:
