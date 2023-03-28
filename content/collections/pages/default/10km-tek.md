@@ -705,19 +705,40 @@ bard_field:
         marks:
           -
             type: bold
-        text: 'VRAČILO PRIJAVNINE'
+        text: 'PRENOS PRIJAVNINE'
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'Vračila prijavnin so možna '
+        text: 'Prenos prijavnine na drugo leto je možen do 24.9.2023 in je brezplačen. Prenos prijavnin na drugo osebo je možen'
       -
         type: text
         marks:
           -
             type: bold
-        text: 'do 15.9.2023!'
+        text: ' '
+      -
+        type: text
+        text: 'do 15.9.2023 in je brezplačen.'
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: ' '
+      -
+        type: text
+        text: "Po tem datumu pa se zaračunajo administrativni stroški v višini 5 eur. Sprememba proge je brezplačna v kolikor je razdalja enaka ali krajša. V primeru spremembe na daljšo razdaljo se zaračuna razlika v\_ceni ob datumu prijave. "
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'VRAČILO PRIJAVNINE'
   -
     type: paragraph
     content:
@@ -729,49 +750,22 @@ bard_field:
         text: 'Do 1.9.2023'
       -
         type: text
-        text: ' je možno vračilo prijavnine, vendar se zaračunajo administrativni stroški v višini 8 eur.'
-  -
-    type: paragraph
-    content:
+        text: ' je možno vračilo prijavnine brez zdravniškega potrdila, vendar se zaračunajo administrativni stroški v višini 8 eur. Z zdravniškim potrdilom je vračilo prijavnine možno '
       -
         type: text
-        text: 'Po 1.9. 2023 je vračilo prijavnine možno z zdravniškim potrdilom, v tem primeru se zaračunajo administrativni stroški v višini 10 eur.'
+        marks:
+          -
+            type: bold
+        text: 'do 24.9.2023'
+      -
+        type: text
+        text: ' , v tem primeru se zaračunajo administrativni stroški v višini 8 eur.'
   -
     type: paragraph
     content:
       -
         type: text
         text: 'Prijavnin zaradi neudeležbe ne vračamo! Neprevzetih štartnih paketov ne pošiljamo po pošti.'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        marks:
-          -
-            type: bold
-        text: 'PRENOS PRIJAVNINE'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        marks:
-          -
-            type: bold
-        text: 'Prenos prijavnine '
-      -
-        type: text
-        text: 'na drugo osebo je'
-      -
-        type: text
-        marks:
-          -
-            type: bold
-        text: ' brezplačen do 15.9.2023. '
-      -
-        type: text
-        text: "Po tem datumu pa se zaračunajo administrativni stroški v višini 5 eur. Sprememba proge je brezplačna v kolikor je razdalja enaka ali krajša. V primeru spremembe na daljšo razdaljo se zaračuna razlika v\_ ceni ob datumu prijave."
   -
     type: paragraph
   -
@@ -858,6 +852,6 @@ bard_field:
 template: page
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1679988982
+updated_at: 1679990563
 featured_image: nm_polmaraton_22_nedelja_059.JPG
 ---
