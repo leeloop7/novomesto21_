@@ -6,7 +6,7 @@ template: page
 featured_image: nm_polmaraton_22_nedelja_031.JPG
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1679991407
+updated_at: 1679991529
 bard_field:
   -
     type: heading
@@ -265,7 +265,7 @@ bard_field:
         type: image
         attrs:
           src: 'asset::assets::trasa-21km---6.nm21.jpg'
-          alt: null
+          alt: 'Nova proga NM21 je hitrejša in v celoti poteka ob reki Krki'
   -
     type: paragraph
     content:
