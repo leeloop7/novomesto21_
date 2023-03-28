@@ -1,5 +1,6 @@
 ---
 id: 056f373c-679f-4515-976d-208016959ca9
+published: false
 blueprint: pages
 title: 'TEKMOVALNE KATEGORIJE'
 bard_field:
@@ -189,9 +190,8 @@ bard_field:
               title: null
         text: 'http://zavs.si'
 template: page
-featured_image:
-  - Novomeski_polmaraton_2021_Lo_res_039.JPG
+featured_image: Novomeski_polmaraton_2021_Lo_res_039.JPG
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1648373246
+updated_at: 1679999606
 ---
