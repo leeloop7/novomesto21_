@@ -19,7 +19,9 @@ bard_field:
     content:
       -
         type: text
-        text: 'Štart 10km teka je skupaj s polmaratonom in tekom na 5km. Npva proga je lažja in hitrejša ter tudi uradno izmerjena.'
+        text: 'Štart 10km teka je skupaj s polmaratonom in tekom na 5km. Nova proga je lažja in hitrejša ter tudi uradno izmerjena.'
+  -
+    type: paragraph
   -
     type: heading
     attrs:
@@ -116,6 +118,123 @@ bard_field:
                 type: text
                 text: 'Promocijska darila'
   -
+    type: paragraph
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'TEKMOVALNE KATEGORIJE'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "moški A\_ do 29 let (rojeni 2008 –1994)"
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "moški B\_ 30 - 34 let (rojeni 1993–1989)"
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "moški C\_ 35 - 39 let (rojeni 1988–1984)"
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "moški D\_ 40 - 44 let (rojeni 1983–1979)"
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "moški E\_ 45 - 49 let (rojeni 1978–1974)"
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "moški F\_ 50 - 54 let (rojeni 1973–1969)"
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "moški G\_ 55 - 59 let (rojeni 1968–1964)"
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "moški H\_ 60 - 64 let (rojeni 1963–1959)"
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "moški I \_ 65–69 let (rojeni 1958–1954)"
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "moški J\_ nad 70 let (rojeni 1953 in starejši)"
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "ženske A\_ do 29 let (rojene 2008 –1994) "
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "ženske B\_ 30 - 34 let (rojene 1993–1989) "
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "ženske C\_ 35 - 39 let (rojene 1988–1984) "
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "ženske D\_ 40 - 44 let (rojene 1983–1979) "
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "ženske E\_ 45 - 49 let (rojene 1978–1974) "
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "ženske F\_ 50 - 54 let (rojene 1973–1969) "
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "ženske G\_ 55 - 59 let (rojene 1968–1964) "
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "ženske H\_ 60 - 64 let (rojene 1963–1959)"
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "ženske I\_ 65 - 69 let (rojene 1958–1954) "
+      -
+        type: hardBreak
+      -
+        type: text
+        text: "ženske J\_ nad 70 let (rojene 1953 in starejše)"
+  -
+    type: paragraph
+  -
     type: heading
     attrs:
       level: 2
@@ -126,6 +245,27 @@ bard_field:
           -
             type: bold
         text: PRIJAVNINA
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Prijave in plačila sprejemamo na spletni strani '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'do 24.9.2023'
+      -
+        type: text
+        text: ". Prijavnino lahko poravnate s kreditno kartico, preko PayPal računa ali preko UPN plačilnega naloga.\_"
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Prijava je sprejeta, ko je plačana!'
   -
     type: table
     content:
@@ -633,118 +773,7 @@ bard_field:
         type: text
         text: "Po tem datumu pa se zaračunajo administrativni stroški v višini 5 eur. Sprememba proge je brezplačna v kolikor je razdalja enaka ali krajša. V primeru spremembe na daljšo razdaljo se zaračuna razlika v\_ ceni ob datumu prijave."
   -
-    type: heading
-    attrs:
-      level: 2
-    content:
-      -
-        type: text
-        marks:
-          -
-            type: bold
-        text: 'TEKMOVALNE KATEGORIJE'
-  -
     type: paragraph
-    content:
-      -
-        type: text
-        text: "moški A\_ do 29 let (rojeni 2008 –1994)"
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "moški B\_ 30 - 34 let (rojeni 1993–1989)"
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "moški C\_ 35 - 39 let (rojeni 1988–1984)"
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "moški D\_ 40 - 44 let (rojeni 1983–1979)"
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "moški E\_ 45 - 49 let (rojeni 1978–1974)"
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "moški F\_ 50 - 54 let (rojeni 1973–1969)"
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "moški G\_ 55 - 59 let (rojeni 1968–1964)"
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "moški H\_ 60 - 64 let (rojeni 1963–1959)"
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "moški I \_ 65–69 let (rojeni 1958–1954)"
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "moški J\_ nad 70 let (rojeni 1953 in starejši)"
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: "ženske A\_ do 29 let (rojene 2008 –1994) "
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "ženske B\_ 30 - 34 let (rojene 1993–1989) "
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "ženske C\_ 35 - 39 let (rojene 1988–1984) "
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "ženske D\_ 40 - 44 let (rojene 1983–1979) "
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "ženske E\_ 45 - 49 let (rojene 1978–1974) "
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "ženske F\_ 50 - 54 let (rojene 1973–1969) "
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "ženske G\_ 55 - 59 let (rojene 1968–1964) "
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "ženske H\_ 60 - 64 let (rojene 1963–1959)"
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "ženske I\_ 65 - 69 let (rojene 1958–1954) "
-      -
-        type: hardBreak
-      -
-        type: text
-        text: "ženske J\_ nad 70 let (rojene 1953 in starejše)"
   -
     type: heading
     attrs:
@@ -778,6 +807,8 @@ bard_field:
                 type: text
                 text: 'Otroke mlajše od 15 let lahko prijavijo le starši oziroma njihovi skrbniki, kateri prevzemajo odgovornost za vsa tveganja v zvezi z njihovim nastopom in morajo obvezno dostaviti pisno soglasje s strinjanjem o udeležbi teka.'
   -
+    type: paragraph
+  -
     type: heading
     attrs:
       level: 2
@@ -794,6 +825,8 @@ bard_field:
       -
         type: text
         text: 'Prvi trije absoultno uvrščeni tekmovalci in tekmovalke na 10km prejmejo pokale ter praktične nagrade. Za prve tri uvrščene v kategoriji na 10km ni javne podelitve nagrad.    '
+  -
+    type: paragraph
   -
     type: heading
     attrs:
@@ -825,6 +858,6 @@ bard_field:
 template: page
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1679925489
+updated_at: 1679988982
 featured_image: nm_polmaraton_22_nedelja_059.JPG
 ---
