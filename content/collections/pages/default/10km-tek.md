@@ -244,6 +244,41 @@ bard_field:
         marks:
           -
             type: bold
+        text: 'NOVA PROGA'
+  -
+    type: paragraph
+    content:
+      -
+        type: image
+        attrs:
+          src: 'asset::assets::trasa-6.-nm21--5km-in-10km-(dva-kroga)-1679991784.png'
+          alt: null
+      -
+        type: text
+        text: 'Nova proga poteka v dveh krogih po 5km. Speljana pa je preko nove brvi arhitekta Marjana Pipenbaherja v Irči vasi. Proga je tudi uradno izmerjena. Oglej si'
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://www.novomesto21.si/trasa/polmaraton-21-097-m'
+              rel: null
+              target: _blank
+              title: null
+        text: ' novo progo'
+  -
+    type: paragraph
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
         text: PRIJAVNINA
   -
     type: paragraph
@@ -852,6 +887,6 @@ bard_field:
 template: page
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1679990563
+updated_at: 1679991989
 featured_image: nm_polmaraton_22_nedelja_059.JPG
 ---
