@@ -6,7 +6,7 @@ template: page
 featured_image: nm_polmaraton_22_nedelja_031.JPG
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1679987629
+updated_at: 1679988317
 bard_field:
   -
     type: heading
@@ -19,6 +19,8 @@ bard_field:
           -
             type: bold
         text: 'ŠTART 1.10.2023 ob 10:00 uri'
+  -
+    type: paragraph
   -
     type: heading
     attrs:
@@ -114,6 +116,8 @@ bard_field:
               -
                 type: text
                 text: 'Promocijska darila'
+          -
+            type: paragraph
   -
     type: heading
     attrs:
@@ -242,6 +246,8 @@ bard_field:
         type: text
         text: 'Za končni čas ekipe šteje pet najhitrejših tekačev v polmaratonu (istega kluba/skupine), od katerih morajo biti vsaj dve tekačici ženskega spola. Prve tri ekipe bodo nagrajene. Skupinska prijava ni pogoj!'
   -
+    type: paragraph
+  -
     type: heading
     attrs:
       level: 2
@@ -269,6 +275,8 @@ bard_field:
               target: _blank
               title: null
         text: ' novo progo'
+  -
+    type: paragraph
   -
     type: heading
     attrs:
@@ -787,6 +795,8 @@ bard_field:
         type: text
         text: "Po tem datumu pa se zaračunajo administrativni stroški v višini 5 eur. Sprememba proge je brezplačna v kolikor je razdalja enaka ali krajša. V primeru spremembe na daljšo razdaljo se zaračuna razlika v\_ ceni ob datumu prijave."
   -
+    type: paragraph
+  -
     type: heading
     attrs:
       level: 2
@@ -811,7 +821,7 @@ bard_field:
     content:
       -
         type: text
-        text: 'ABSOLUTNO: Prvih pet absolutno uvrščenih v moški in ženski kategoriji dobi pokale in praktične nagrade.'
+        text: 'ABSOLUTNO: Prvih trije absolutno uvrščeni v moški in ženski kategoriji dobi pokale in praktične nagrade.'
   -
     type: paragraph
     content:
@@ -1306,6 +1316,8 @@ bard_field:
         type: text
         text: 'Posebno nagrado prejme najštevilčnejša ekipa. Ekipo sestavljajo tekači na 21km, 10km in 5km. Pri tem dobi vsak tekač na 21km - 3 točke, 10km - 2 točki in tekač na 5km -1 toćko. V primeru enakega števila točk zmaga ekipa ki ima več tekačev na daljših razdaljah.'
   -
+    type: paragraph
+  -
     type: heading
     attrs:
       level: 2
@@ -1337,6 +1349,8 @@ bard_field:
               -
                 type: text
                 text: 'Otroke mlajše od 15 let lahko prijavijo le starši oziroma njihovi skrbniki, kateri prevzemajo odgovornost za vsa tveganja v zvezi z njihovim nastopom in morajo obvezno dostaviti pisno soglasje s strinjanjem o udeležbi teka.'
+          -
+            type: paragraph
   -
     type: heading
     attrs:
@@ -1353,7 +1367,46 @@ bard_field:
     content:
       -
         type: text
-        text: 'Prvi trije absoultno uvrščeni tekmovalci in tekmovalke na 10km prejmejo pokale ter praktične nagrade. Za prve tri uvrščene v kategoriji na 10km ni javne podelitve nagrad.    '
+        text: 'Prvi trije absoultno uvrščeni tekmovalci in tekmovalke na 10km prejmejo pokale ter praktične nagrade. .    '
+  -
+    type: paragraph
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'ZDRAVSTVENO VARSTVO'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Vsem tekalem priporočamo, da do 30 dni pred tekmovanjem opravijo preventivni zdravstveni pregled in pridobijo potrditev zdravnika, da so zdravi in pripravljeni na napor.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Prireditve se lahko udeležijo le zdrave osebe brez znakov prehlada in okužb, slabega počutja ali povišane temperature. Udeležence prosimo, da so pred in na dan tekmovanja pozorni na vsake znake okužbe dihal (npr. nahod, kihanje, kašljanje, bolečine v žrelu, mišicah, povišana temperatura…) in naj se v primeru slabega počutja odpovejo nastopu.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Vsakdo tekmuje na lastno odgovornost! Organizator ne prevzema nikakršnih odgovornosti.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "V primeru poslabšanja epidemioloških razmer lahko organizator od tekmovalcev zahteva\_nošenje mask, negativen Covid-19 test ali PCT potrdilo."
+  -
+    type: paragraph
   -
     type: heading
     attrs:
@@ -1370,7 +1423,7 @@ bard_field:
     content:
       -
         type: text
-        text: 'Preberi si '
+        text: 'Organizator si pridržuje pravico spremembe tega razpisa! Preberi si '
       -
         type: text
         marks:
