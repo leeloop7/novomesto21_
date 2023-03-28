@@ -1,10 +1,10 @@
 ---
 id: 83d24e88-58e2-4d84-b9f9-bfe73b70458d
 blueprint: pages
-title: 'NM21 - 5KM - REKREATIVNI TEK'
+title: 'NM21 - 5KM'
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1679999553
+updated_at: 1679999579
 bard_field:
   -
     type: heading
