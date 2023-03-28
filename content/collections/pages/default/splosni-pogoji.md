@@ -8,19 +8,19 @@ bard_field:
     content:
       -
         type: text
-        text: 'Tekmovanje poteka po pravilih AZS, po tem razpisu in pravilih Mednarodne atletske federacije (IAAF). Organizatorji si pridržujemo pravico do spremembe razpisnih pogojev in programa prireditve. Razpis je objavljen na spletni strani www.novomesto21.si'
+        text: 'Tekmovanje poteka po pravilih AZS, po tem razpisu in pravilih Mednarodne atletske federacije (IAAF). Organizatorji si pridržujemo pravico do spremembe razpisnih pogojev in programa prireditve. Razpis je objavljen na spletni strani www.novomesto21.si.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'Tekači ste dolžni spoštovati navodila in priporočila organizatorjev. V primeru nespoštovanja posredovanih navodil in priporočil organizatorji ne prevzemamo odgovornosti za poškodbe in druge posledice, ki bi utegnile nastati tekačem. Organizatorji tekače pred začetkom prireditve seznanimo o vseh bistvenih elementih izvedbe prireditve, še posebej o varstvenih ukrepih, načinu prijave, tekmovalnih kategorijah in trasah. Vsak tekač je dolžan sprejeti razpisne pogoje in biti z njimi seznanjen. Pridržujemo si pravico, da tekača ob neupoštevanju pravil, zapisanih v razpisu in podrobnih navodilih, izločimo iz tekmovanja in iz prizorišča.'
+        text: 'Tekači ste dolžni spoštovati navodila in priporočila organizatorjev. V primeru nespoštovanja posredovanih navodil in priporočil organizatorji ne prevzemamo odgovornosti za poškodbe in druge posledice, ki bi utegnile nastati tekačem. Organizatorji tekače pred začetkom prireditve seznanimo o vseh bistvenih elementih izvedbe prireditve, še posebej o varstvenih ukrepih, načinu prijave, tekmovalnih kategorijah in trasah. Vsak tekač je dolžan sprejeti razpisne pogoje in biti z njimi seznanjen. Pridržujemo si pravico, da tekača ob neupoštevanju pravil, zapisanih v razpisu in podrobnih navodilih, izločimo iz tekmovanja in iz prizorišča. V primeru pozitivnega dopinškega prekrška je tekmovalec dolžan vrniti denarno nagrado in pokal.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'Organizator si pridržuje pravico do zadržanja nagrade delno ali v celoti, če tekač/ica odkloni sodelovanje z novinarji (intervju, fotografiranje, ipd.), ne sodeluje na doping kontroli ali ne sodeluje z organizatorjem po končanem tekmovanju. Organizator si pridržuje pravico spremembe tega razpisa! Podrobna navodila bodo pred prireditvijo objavljena na internetni strani www.novomesto21.si in v dokumentu Navodila udeležencem Novomeškega 1/2 maratona.'
+        text: 'Organizator si pridržuje pravico do zadržanja nagrade delno ali v celoti, če tekač/ica odkloni sodelovanje z novinarji (intervju, fotografiranje, ipd.), ne sodeluje na doping kontroli ali ne sodeluje z organizatorjem po končanem tekmovanju. Organizator si pridržuje pravico spremembe tega razpisa! Podrobna navodila bodo pred prireditvijo objavljena na internetni strani www.novomesto21.si in v dokumentu "Navodila udeležencem Novomeškega 1/2 maratona".'
   -
     type: paragraph
     content:
@@ -40,7 +40,7 @@ bard_field:
     content:
       -
         type: text
-        text: 'V polmaratonu je prepovedano nastopiti tekmovalcem mlajšim od 15 let, na 10 km teku pa otrokom mlajšim od 12 let. Na rekreativnem 6,5 km teku je prepovedano nastopiti otrokom, mlajšim od 11 let. Otroke, ki so mlajši od 15 let lahko prijavijo le starši oziroma njihovi skrbniki. Starši oziroma skrbniki prevzemajo odgovornost za vsa tveganja v zvezi z nastopom otrok iz tega odstavka.'
+        text: 'V polmaratonu je prepovedano nastopiti tekmovalcem mlajšim od 15 let, na 10 km teku pa otrokom mlajšim od 12 let. Na rekreativnem 5 km teku je prepovedano nastopiti otrokom, mlajšim od 11 let. Otroke, ki so mlajši od 15 let lahko prijavijo le starši oziroma njihovi skrbniki. Starši oziroma skrbniki prevzemajo odgovornost za vsa tveganja v zvezi z nastopom otrok iz tega odstavka.'
   -
     type: heading
     attrs:
@@ -102,7 +102,7 @@ bard_field:
     content:
       -
         type: text
-        text: 'Podrobna navodila bodo objavljena na internetni strani www.novomesto21.si in v dokumentu Navodila udeležencem Novomeškega 1/2 maratona.'
+        text: 'Podrobna navodila bodo objavljena na internetni strani www.novomesto21.si in v dokumentu: Navodila udeležencem Novomeškega 1/2 maratona.'
   -
     type: heading
     attrs:
@@ -142,7 +142,7 @@ bard_field:
     content:
       -
         type: text
-        text: 'Uradni rezultati bodo objavljeni na spletni strani Novomeškega polmaratona (www.novomesto21.si) in na strani uradnega časomerilca Protime (www.protime.si). Pritožbena komisija sprejema pisne pritožbe s predloženo kavcijo v višini 50 EUR na dan tekmovanja med 10:00 in 16:00 uro v prostorih časomerilne službe.'
+        text: 'Uradni rezultati bodo objavljeni na spletni strani Novomeškega polmaratona (www.novomesto21.si) in na strani uradnega časomerilca Protime (www.protime.si). Pritožbena komisija sprejema pisne pritožbe s predloženo kavcijo v višini 50 EUR na dan tekmovanja med 10:00 in 16:00 uro v prostorih časomerilne službe.'
   -
     type: heading
     attrs:
@@ -156,7 +156,13 @@ bard_field:
     content:
       -
         type: text
-        text: 'Organizator si pridržuje pravico diskvalifikacije v primeru, če tekač krši pravila AZS ali Mednarodne atletske zveze - IAAF ali tekač ne nosi štartne številke v skladu s pravili Atletske zveze Slovenije ali tako, da le ta ni vidna v celoti (številka in sponzorji Novomeškega 1/2 maratona). Tekmovalec je lahko izločen iz tekmovanja v primeru da krajša progo, uporablja drugi prevozno sredstvo, ne nosi štartne številke se obnaša nespoštljivo ali ovira druge tekmovalce Tekač lahko odteče krajšo razdaljo od prijavljene.'
+        text: 'Organizator si pridržuje pravico diskvalifikacije v primeru, če tekač krši pravila AZS ali Mednarodne atletske zveze - IAAF ali tekač ne nosi štartne številke v skladu s pravili Atletske zveze Slovenije ali tako, da le ta ni vidna v celoti (številka in sponzorji Novomeškega 1/2 maratona). Tekmovalec je lahko izločen iz tekmovanja v primeru da krajša progo, uporablja drugo prevozno sredstvo, ne nosi štartne številke se obnaša nespoštljivo ali ovira druge tekmovalce. Tekmovalce ni dovoljeno spremljati na kolesih in jim podajati pijačo ali druga okrepčila izven uradnih okrepčevalnic ali vodnih postaj organizatorja.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Tekač lahko odteče krajšo razdaljo od prijavljene, ne sme pa odteči daljše razdalje od prijavljene razdalje.'
   -
     type: heading
     attrs:
@@ -198,9 +204,8 @@ bard_field:
         type: text
         text: 'S prijavo na tekmovanje tekač potrjuje resničnost podatkov, zapisanih v prijavi. Izjavlja, da je zdrav, vsestransko pripravljen za aktivno udeležbo in zdravniško pregledan. Upošteval bo vsa navodila organizatorja in sodeloval/-a na lastno odgovornost. S prijavo na tekmovanje tekač potrjuje pristanek na tveganja v zvezi z udeležbo na Novomeškem 1/2 maratonu in zato do organizatorja ne bo uveljavljal nikakršnih odškodninskih ali drugih zahtevkov. Soglaša, da lahko organizatorji prireditve objavijo podatke, fotografije, posnetke prijaviteljev v sredstvih javnega obveščanja, ne da bi v zameno zahtevali kakršno koli povračilo.'
 template: page
-featured_image:
-  - Novomeski_polmaraton_2021_Lo_res_022.JPG
+featured_image: Novomeski_polmaraton_2021_Lo_res_022.JPG
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1648374633
+updated_at: 1679988675
 ---
