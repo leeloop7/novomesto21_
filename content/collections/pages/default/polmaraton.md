@@ -6,7 +6,7 @@ template: page
 featured_image: nm_polmaraton_22_nedelja_031.JPG
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1679987563
+updated_at: 1679987629
 bard_field:
   -
     type: heading
@@ -823,7 +823,7 @@ bard_field:
     content:
       -
         type: text
-        text: 'MALUS: V kolikor tekmovalec v absolutni konkurenci ne doseže časovne norme glede na uvrstitev, se mu pripada nagrada glede na doseženo normo. Npr. Če tekmovalka med ženskami zasede absolutno 2. mesto in teče 1:21:20 ji pripada nagrada 300 eur. Denarna nagrada (bruto znesek) se izplača najkasneje v 60 dneh po tekmovanju na osebni račun tekmovalca. Nagrajeni tekmovalci morajo najkasneje do 25. 10. 2023 organizatorju poslati davčno številko, popoln naslov bivališča ter številko osebnega računa IBAN in BIC.'
+        text: 'MALUS: V kolikor tekmovalec v absolutni konkurenci ne doseže časovne norme glede na uvrstitev, mu pripada nagrada glede na doseženo normo. Npr. Če tekmovalka med ženskami zasede absolutno 2. mesto in teče 1:21:20 ji pripada nagrada 300 eur. Denarna nagrada (bruto znesek) se izplača najkasneje v 60 dneh po tekmovanju na osebni račun tekmovalca. Nagrajeni tekmovalci morajo najkasneje do 25. 10. 2023 organizatorju poslati davčno številko, popoln naslov bivališča ter številko osebnega računa IBAN in BIC.'
   -
     type: paragraph
     content:
@@ -1382,4 +1382,7 @@ bard_field:
               target: null
               title: null
         text: 'splošna določila in pogoje'
+      -
+        type: text
+        text: .
 ---
