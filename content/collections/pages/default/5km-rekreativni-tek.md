@@ -4,7 +4,7 @@ blueprint: pages
 title: '5KM - REKREATIVNI TEK'
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1679990739
+updated_at: 1679990784
 bard_field:
   -
     type: heading
@@ -844,4 +844,5 @@ bard_field:
               title: null
         text: 'splošna določila in pogoje'
 featured_image: img_5609.jpg
+template: page
 ---
