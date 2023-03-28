@@ -13,7 +13,7 @@ bard_field:
         marks:
           -
             type: bold
-        text: 'PETEK 29.9.2023 - Kulturni center Janez Trdina'
+        text: 'PETEK 29. 9. 2023 - Kulturni center Janez Trdina'
   -
     type: paragraph
     content:
@@ -30,7 +30,7 @@ bard_field:
         marks:
           -
             type: bold
-        text: 'SOBOTA 30.9.2023 – Novi trg'
+        text: 'SOBOTA 30. 9. 2023 – Novi trg'
   -
     type: paragraph
     content:
@@ -183,6 +183,6 @@ bard_field:
 featured_image: Novomeski_polmaraton_2021_Lo_res_024.JPG
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1678892390
+updated_at: 1679987077
 template: page
 ---
