@@ -4,7 +4,7 @@ blueprint: pages
 title: '5KM - REKREATIVNI TEK'
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1679991112
+updated_at: 1679992067
 bard_field:
   -
     type: heading
@@ -16,7 +16,7 @@ bard_field:
         marks:
           -
             type: bold
-        text: 'ŠTART   1. 10. 2023 ob 10:00 uri'
+        text: 'ŠTART 1.10.2023 ob 10:00 uri'
   -
     type: paragraph
     content:
@@ -226,6 +226,41 @@ bard_field:
       -
         type: text
         text: "ženske J\_ nad 70 let (rojene 1953 in starejše)"
+  -
+    type: paragraph
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'NOVA PROGA'
+  -
+    type: paragraph
+    content:
+      -
+        type: image
+        attrs:
+          src: 'asset::assets::trasa-6.-nm21--5km-in-10km-(dva-kroga)-1679991784.png'
+          alt: null
+      -
+        type: text
+        text: 'Nova proga poteka v dveh krogih po 5km. Speljana pa je preko nove brvi arhitekta Marjana Pipenbaherja v Irči vasi. Proga je tudi uradno izmerjena. Oglej si'
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://www.novomesto21.si/trasa/polmaraton-21-097-m'
+              rel: null
+              target: _blank
+              title: null
+        text: ' novo progo'
   -
     type: paragraph
   -
