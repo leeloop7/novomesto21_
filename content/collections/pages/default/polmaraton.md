@@ -6,7 +6,7 @@ template: page
 featured_image: nm_polmaraton_22_nedelja_031.JPG
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1679988317
+updated_at: 1679988890
 bard_field:
   -
     type: heading
@@ -288,6 +288,18 @@ bard_field:
           -
             type: bold
         text: PRIJAVNINA
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Prijave in plačila sprejemamo na spletni strani do 24.9.2023. Prijavnino lahko poravnate s kreditno kartico, preko PayPal računa ali preko UPN plačilnega naloga.\_"
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'Prijava je sprejeta, ko je plačana!'
   -
     type: table
     content:
@@ -796,6 +808,23 @@ bard_field:
         text: "Po tem datumu pa se zaračunajo administrativni stroški v višini 5 eur. Sprememba proge je brezplačna v kolikor je razdalja enaka ali krajša. V primeru spremembe na daljšo razdaljo se zaračuna razlika v\_ ceni ob datumu prijave."
   -
     type: paragraph
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Na dan tekmovanja je možna prijava na tekmovanje do 8:45 ure. V kolikor imate težave s plačilom se obrnite na\_"
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'mailto:prijave@novomesto21.si'
+              rel: null
+              target: null
+              title: null
+        text: prijave@novomesto21.si
   -
     type: heading
     attrs:
