@@ -6,7 +6,7 @@ template: page
 featured_image: nm_polmaraton_22_nedelja_031.JPG
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1679988890
+updated_at: 1679990608
 bard_field:
   -
     type: heading
@@ -263,7 +263,7 @@ bard_field:
     content:
       -
         type: text
-        text: 'Zaradi načrtovane prenove lesenega mostu v Lokah smo morali spremeniti progo. Nova proga je bolj ravna in hitrejša, speljali pa smo jo preko nove brvi arhitekta Marjana Pipenbaherja v Irči vasi. Proga je tudi uradno izmerjena. Oglej si'
+        text: 'Zaradi načrtovane prenove lesenega mostu v Lokah smo spremenili progo. Nova proga je bolj ravna in hitrejša, speljali pa smo jo preko nove brvi arhitekta Marjana Pipenbaherja v Irči vasi. Proga je tudi uradno izmerjena. Oglej si'
       -
         type: text
         marks:
