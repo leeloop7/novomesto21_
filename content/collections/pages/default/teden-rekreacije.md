@@ -1,10 +1,11 @@
 ---
 id: 891047bb-974f-4ef0-b4f5-3c9cafde7c53
+published: false
 blueprint: pages
 title: 'TEDEN REKREACIJE GIBANJA IN ZDRAVJA'
 template: page
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1663680283
+updated_at: 1679992187
 bard_field:
   -
     type: paragraph
@@ -57,9 +58,9 @@ bard_field:
         type: text
         text: 'Pogovor o knjigi, tekaški izkušnji med pandemijo in premagovanju lastnih meja in psihičnih ovir, ki jih predstavlja rekreacija in šport'
       -
-        type: hard_break
+        type: hardBreak
       -
-        type: hard_break
+        type: hardBreak
       -
         type: image
         attrs:
