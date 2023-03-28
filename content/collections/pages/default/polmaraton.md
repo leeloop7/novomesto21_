@@ -6,7 +6,7 @@ template: page
 featured_image: nm_polmaraton_22_nedelja_031.JPG
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1679990608
+updated_at: 1679991407
 bard_field:
   -
     type: heading
@@ -257,7 +257,15 @@ bard_field:
         marks:
           -
             type: bold
-        text: 'PROGA '
+        text: 'NOVA PROGA'
+  -
+    type: paragraph
+    content:
+      -
+        type: image
+        attrs:
+          src: 'asset::assets::trasa-21km---6.nm21.jpg'
+          alt: null
   -
     type: paragraph
     content:
