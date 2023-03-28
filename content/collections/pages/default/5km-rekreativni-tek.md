@@ -4,7 +4,7 @@ blueprint: pages
 title: '5KM - REKREATIVNI TEK'
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1679990784
+updated_at: 1679991025
 bard_field:
   -
     type: heading
@@ -16,7 +16,7 @@ bard_field:
         marks:
           -
             type: bold
-        text: 'ŠTART 1.10.2023 ob 10:00 uri'
+        text: 'ŠTART 1. 10. 2023 ob 10:00 uri'
   -
     type: paragraph
     content:
