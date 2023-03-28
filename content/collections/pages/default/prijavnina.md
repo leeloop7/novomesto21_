@@ -5,37 +5,10 @@ title: PRIJAVNINA
 template: page
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1664180983
+updated_at: 1679988775
 bard_field:
   -
     type: paragraph
-    content:
-      -
-        type: text
-        text: "Prijave in plačila sprejemamo na spletni strani do 25.9.2022. Prijavnino lahko poravnate s kreditno kartico ali preko PayPal računa.\_"
-      -
-        type: text
-        marks:
-          -
-            type: bold
-        text: 'Prijava je sprejeta, ko je plačana!'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: "Na dan tekmovanja je možna prijava na tekmovanje do 8:45 ure. V kolikor imate težave s plačilom se obrnite na\_"
-      -
-        type: text
-        marks:
-          -
-            type: link
-            attrs:
-              href: 'mailto:prijave@novomesto21.si'
-              rel: null
-              target: null
-              title: null
-        text: prijave@novomesto21.si
   -
     type: heading
     attrs:
@@ -51,15 +24,14 @@ bard_field:
     type: table
     content:
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_header
+            type: tableHeader
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -71,12 +43,11 @@ bard_field:
                         type: bold
                     text: 'ROK PRIJAVE'
           -
-            type: table_header
+            type: tableHeader
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -88,12 +59,11 @@ bard_field:
                         type: bold
                     text: POSAMIČNA
           -
-            type: table_header
+            type: tableHeader
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -105,15 +75,14 @@ bard_field:
                         type: bold
                     text: SKUPINSKA
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -125,12 +94,11 @@ bard_field:
                         type: bold
                     text: 'do 15. 5. 2022'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -142,12 +110,11 @@ bard_field:
                         type: bold
                     text: '25 eur'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -159,15 +126,14 @@ bard_field:
                         type: bold
                     text: '25 eur'
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -179,12 +145,11 @@ bard_field:
                         type: bold
                     text: 'do 15. 6. 2022'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -196,12 +161,11 @@ bard_field:
                         type: bold
                     text: '28 eur'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -213,15 +177,14 @@ bard_field:
                         type: bold
                     text: '25 eur'
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -233,12 +196,11 @@ bard_field:
                         type: bold
                     text: 'do 15. 7. 2022'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -250,12 +212,11 @@ bard_field:
                         type: bold
                     text: '30 eur'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -267,15 +228,14 @@ bard_field:
                         type: bold
                     text: '25 eur'
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -287,12 +247,11 @@ bard_field:
                         type: bold
                     text: 'do 15. 8. 2022'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -304,12 +263,11 @@ bard_field:
                         type: bold
                     text: '35 eur'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -321,15 +279,14 @@ bard_field:
                         type: bold
                     text: '28 eur'
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -341,12 +298,11 @@ bard_field:
                         type: bold
                     text: 'do 15. 9. 2022'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -358,12 +314,11 @@ bard_field:
                         type: bold
                     text: '38 eur'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -375,15 +330,14 @@ bard_field:
                         type: bold
                     text: 30eur
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -395,12 +349,11 @@ bard_field:
                         type: bold
                     text: 'do 25. 9. 2022'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -412,12 +365,11 @@ bard_field:
                         type: bold
                     text: '40 eur'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -426,15 +378,14 @@ bard_field:
                     type: text
                     text: /
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -446,12 +397,11 @@ bard_field:
                         type: bold
                     text: 'Na dan prireditve *'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -463,12 +413,11 @@ bard_field:
                         type: bold
                     text: '50 eur'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -497,15 +446,14 @@ bard_field:
     type: table
     content:
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_header
+            type: tableHeader
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -517,12 +465,11 @@ bard_field:
                         type: bold
                     text: 'ROK PRIJAVE'
           -
-            type: table_header
+            type: tableHeader
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -534,12 +481,11 @@ bard_field:
                         type: bold
                     text: POSAMIČNA
           -
-            type: table_header
+            type: tableHeader
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -551,15 +497,14 @@ bard_field:
                         type: bold
                     text: SKUPINSKA
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -571,12 +516,11 @@ bard_field:
                         type: bold
                     text: 'do 15. 5. 2022'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -588,12 +532,11 @@ bard_field:
                         type: bold
                     text: '22 eur'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -605,15 +548,14 @@ bard_field:
                         type: bold
                     text: '20 eur'
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -625,12 +567,11 @@ bard_field:
                         type: bold
                     text: 'do 15. 6. 2022'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -642,12 +583,11 @@ bard_field:
                         type: bold
                     text: '25 eur'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -659,15 +599,14 @@ bard_field:
                         type: bold
                     text: '20 eur'
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -679,12 +618,11 @@ bard_field:
                         type: bold
                     text: 'do 15. 7. 2022'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -696,12 +634,11 @@ bard_field:
                         type: bold
                     text: '28 eur'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -713,15 +650,14 @@ bard_field:
                         type: bold
                     text: '22 eur'
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -733,12 +669,11 @@ bard_field:
                         type: bold
                     text: 'do 15. 8. 2022'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -750,12 +685,11 @@ bard_field:
                         type: bold
                     text: '30 eur'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -767,15 +701,14 @@ bard_field:
                         type: bold
                     text: '25 eur'
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -787,12 +720,11 @@ bard_field:
                         type: bold
                     text: 'do 15. 9. 2021'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -804,12 +736,11 @@ bard_field:
                         type: bold
                     text: '32 eur'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -821,15 +752,14 @@ bard_field:
                         type: bold
                     text: '27 eur'
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -841,12 +771,11 @@ bard_field:
                         type: bold
                     text: 'do 25. 9. 2021'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -858,12 +787,11 @@ bard_field:
                         type: bold
                     text: '35 eur'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -875,15 +803,14 @@ bard_field:
                         type: bold
                     text: /
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -895,12 +822,11 @@ bard_field:
                         type: bold
                     text: 'Na dan prireditve *'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -912,12 +838,11 @@ bard_field:
                         type: bold
                     text: '45 eur'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -946,15 +871,14 @@ bard_field:
     type: table
     content:
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_header
+            type: tableHeader
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -966,12 +890,11 @@ bard_field:
                         type: bold
                     text: 'ROK PRIJAVE'
           -
-            type: table_header
+            type: tableHeader
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -983,12 +906,11 @@ bard_field:
                         type: bold
                     text: POSAMIČNA
           -
-            type: table_header
+            type: tableHeader
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -1000,15 +922,14 @@ bard_field:
                         type: bold
                     text: SKUPINSKA
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -1020,12 +941,11 @@ bard_field:
                         type: bold
                     text: 'do 15. 5. 2021'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -1037,12 +957,11 @@ bard_field:
                         type: bold
                     text: '20 eur'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -1054,15 +973,14 @@ bard_field:
                         type: bold
                     text: '18 eur'
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -1074,12 +992,11 @@ bard_field:
                         type: bold
                     text: 'do 15. 6. 2021'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -1091,12 +1008,11 @@ bard_field:
                         type: bold
                     text: '20 eur'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -1108,15 +1024,14 @@ bard_field:
                         type: bold
                     text: '18 eur'
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -1128,12 +1043,11 @@ bard_field:
                         type: bold
                     text: 'do 15. 7. 2021'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -1145,12 +1059,11 @@ bard_field:
                         type: bold
                     text: '22 eur'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -1162,15 +1075,14 @@ bard_field:
                         type: bold
                     text: '20 eur'
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -1182,12 +1094,11 @@ bard_field:
                         type: bold
                     text: 'do 15. 8. 2021'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -1199,12 +1110,11 @@ bard_field:
                         type: bold
                     text: '25 eur'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -1216,15 +1126,14 @@ bard_field:
                         type: bold
                     text: '20 eur'
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -1236,12 +1145,11 @@ bard_field:
                         type: bold
                     text: 'do 15. 9. 2021'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -1253,12 +1161,11 @@ bard_field:
                         type: bold
                     text: '25 eur'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -1270,15 +1177,14 @@ bard_field:
                         type: bold
                     text: '22 eur'
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -1290,12 +1196,11 @@ bard_field:
                         type: bold
                     text: 'do 25. 9. 2021'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -1307,12 +1212,11 @@ bard_field:
                         type: bold
                     text: '30 eur'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -1321,15 +1225,14 @@ bard_field:
                     type: text
                     text: /
       -
-        type: table_row
+        type: tableRow
         content:
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -1341,12 +1244,11 @@ bard_field:
                         type: bold
                     text: 'Na dan prireditve *'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -1358,12 +1260,11 @@ bard_field:
                         type: bold
                     text: '40 eur'
           -
-            type: table_cell
+            type: tableCell
             attrs:
               colspan: 1
               rowspan: 1
               colwidth: null
-              background: null
             content:
               -
                 type: paragraph
@@ -1387,7 +1288,7 @@ bard_field:
             type: bold
         text: 'SKUPINSKE PRIJAVE'
       -
-        type: hard_break
+        type: hardBreak
         marks:
           -
             type: bold
