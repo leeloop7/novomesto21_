@@ -4,7 +4,7 @@ blueprint: pages
 title: '5KM - REKREATIVNI TEK'
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1679992067
+updated_at: 1679992113
 bard_field:
   -
     type: heading
@@ -249,7 +249,7 @@ bard_field:
           alt: null
       -
         type: text
-        text: 'Nova proga poteka v dveh krogih po 5km. Speljana pa je preko nove brvi arhitekta Marjana Pipenbaherja v Irči vasi. Proga je tudi uradno izmerjena. Oglej si'
+        text: 'Nova proga je speljana preko nove brvi arhitekta Marjana Pipenbaherja v Irči vasi. Proga je tudi uradno izmerjena. Oglej si'
       -
         type: text
         marks:
