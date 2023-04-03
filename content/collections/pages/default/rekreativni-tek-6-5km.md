@@ -5,7 +5,7 @@ title: 'TRASA - 5km'
 template: page
 parent: 1c7c3218-1a8a-4b54-82a7-4f80e3f28d8e
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1680508935
+updated_at: 1680509007
 code_field: '<iframe src="https://www.google.com/maps/d/embed?mid=1TCKoG7t6ycl7pm_KX8ARbskt7OYszR4&ehbc=2E312F" width="100%" height="550"></iframe>'
 bard_field:
   -
@@ -20,4 +20,12 @@ bard_field:
       -
         type: text
         text: 'Proga je uradno izmerjena in ima certifikat AIMS - evropske zveze za cestne teke. Trasa je v celoti asfaltirana.'
+  -
+    type: paragraph
+    content:
+      -
+        type: image
+        attrs:
+          src: 'asset::assets::trasa-6.-nm21--5km-in-10km-(dva-kroga)-1679991784.png'
+          alt: null
 ---
