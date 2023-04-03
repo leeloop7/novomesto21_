@@ -1,11 +1,11 @@
 ---
 id: e3e43ec7-5706-4d4d-b352-6ed2a08f87cc
 blueprint: pages
-title: 'Trasa Polmaraton 21.097 m'
+title: 'TRASA POLMARATON - 21.097 m'
 template: page
 parent: 1c7c3218-1a8a-4b54-82a7-4f80e3f28d8e
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1680507246
+updated_at: 1680507510
 code_field: '<iframe src="https://www.google.com/maps/d/embed?mid=1P8T4-L-vZog1MF08qNHf9yfBxaRA97U&ehbc=2E312F" width="100%" height="500"></iframe>'
 bard_field:
   -
@@ -23,6 +23,85 @@ bard_field:
           -
             type: bold
         text: 'Limit polmaratona je 3h. Tekači na polmaratonu, ki boste imeli na vmesni času na 4 km slabši čas od 41 min bruto, boste preusmerjeni na progo 10 km teka.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Na trasi so 4 okrepčevalnice in 3 vodne postaje.'
+  -
+    type: heading
+    attrs:
+      level: 3
+    content:
+      -
+        type: text
+        text: 'TEMPO TEKAČI'
+  -
+    type: bulletList
+    content:
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: 'za čas 1:30'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: 'za čas 1:40'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: 'za čas 1:50'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: 'za čas 2:00'
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: bold
+                text: 'za čas 2:10'
+  -
+    type: paragraph
   -
     type: paragraph
     content:
