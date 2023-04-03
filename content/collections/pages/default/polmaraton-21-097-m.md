@@ -1,11 +1,11 @@
 ---
 id: e3e43ec7-5706-4d4d-b352-6ed2a08f87cc
 blueprint: pages
-title: 'TRASA POLMARATON - 21.097 m'
+title: 'TRASA - 21,097 km'
 template: page
 parent: 1c7c3218-1a8a-4b54-82a7-4f80e3f28d8e
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1680507615
+updated_at: 1680508749
 code_field: '<iframe src="https://www.google.com/maps/d/embed?mid=1P8T4-L-vZog1MF08qNHf9yfBxaRA97U&ehbc=2E312F" width="100%" height="500"></iframe>'
 bard_field:
   -
