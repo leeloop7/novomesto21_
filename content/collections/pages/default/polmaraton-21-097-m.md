@@ -5,8 +5,8 @@ title: 'Trasa Polmaraton 21.097 m'
 template: page
 parent: 1c7c3218-1a8a-4b54-82a7-4f80e3f28d8e
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1680505487
-code_field: '<iframe src="https://www.google.com/maps/d/embed?mid=1TCKoG7t6ycl7pm_KX8ARbskt7OYszR4&ehbc=2E312F" width="1000" height="500"></iframe>'
+updated_at: 1680505542
+code_field: '<iframe src="https://www.google.com/maps/d/embed?mid=1P8T4-L-vZog1MF08qNHf9yfBxaRA97U&ehbc=2E312F" width="1000" height="500"></iframe>'
 bard_field:
   -
     type: paragraph
