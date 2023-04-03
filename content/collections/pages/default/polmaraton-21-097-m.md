@@ -5,7 +5,7 @@ title: 'Trasa Polmaraton 21.097 m'
 template: page
 parent: 1c7c3218-1a8a-4b54-82a7-4f80e3f28d8e
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1680506470
+updated_at: 1680507246
 code_field: '<iframe src="https://www.google.com/maps/d/embed?mid=1P8T4-L-vZog1MF08qNHf9yfBxaRA97U&ehbc=2E312F" width="100%" height="500"></iframe>'
 bard_field:
   -
@@ -13,13 +13,7 @@ bard_field:
     content:
       -
         type: text
-        text: "Trasa proge je ravninska s tremi lažjimi vzponi. Trasa poteka po trdi asfaltni podlagi z dvema vmesnima utrjenim makadamskim odsekoma med 11,5km in 12,6km ter 15,6km in 16,7km. Prvi del trase je hiter, saj so ceste ravne in široke. Prvih 6,5km se teče skupaj s tekači na, ki tečejo\_na 6,5km ter 10km. Drugi del je malenkost bolj razgiban, a veliko lepši saj proga poteka bo reki Krki in prečka nekaj najlepših tekaških mest v Novomeški okolici.\_\_\_"
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: "Štart polmaratona je na križišču Sedilove ceste in Rozmanove ulice pred Zavarovalnico Sava. Štarta se v smeri proti Šmihelskem mostu. Po cca 200m se zavije desno na Ljubljansko cesto, do Bršljina, kjer se na križišču pri trgovskem centru Hedera zavije na Kočevarjevo ulico, mimo Merkurjevega centra, nadaljuje do križišča pri osnovni šoli Bršljin, kjer se zavije levo mimo policije nazaj na Ljubljansko cesto. Po Ljubljanski cesti proga nadaljuje do krožišča Situla, kjer zavije desno na Andrijaničevo cesto do krožišča pri tabletki in naprej do križišča pri tovarni zdravil Krka, kjer proga zavije desno na Seidlovo cesto. Trasa teka poteka do štartno-ciljnega prostora na Seidlovi cesti, kjer je cilj rekreativnega teka (zavijejo desno v Kettejev drevoredj proti Športni dovrani). Polmaratonska proga poteka naprej skozi Šmihelski most in desno na Topliško cesto do Srebrnič in naprej do vasi Volavč v občini Straža. Tam trasa zavije desno na leseni most do vasi Loke, kjer trasa v vasi Loke zavije levo na makadamsko pot do Sel pri Straži. Na križišču v Selah pri Straži proga zavije desno in po cca 150m zopet desno na lokalno cesto Straža - Zalog. Po tej cesti proga nadaljuje skozi Zalog do Češče vasi, kjer pri BTC-ju zavije desno v Češčo vas. V vasi Češča vas zavije proga desno do makadamske poti, ki vodi do Grobelj, tam pa zopet po asfaltni cesti do Lastovč, oziroma Cegelnice, kjer zavije na Povhovo ulico in nadaljuje mimo tovarne Ursa do Straške ceste. Na Straški cesti proga zavije desno in po približno\_150 metrih zopet desno na cesto v Bršljin mimo okrepčevalnice Gedžo proti Ljubljanski cesti, kjer proga prečka železniški prehod.\_Tam proga nadaljuje po Ljubljanski cesti naravnost proti centru mesta. Na križišču s Seidlovo cesto zavije levo, in po cca 200m sledi cilj na Seidlovi cesti (isto mesto, kjer je Štart).\_"
+        text: 'Trasa polmaratona je nova. Speljana je preko novega mostu v Irči vasi proti Straži in nazaj. Je bolj ravna in hitrejša, kot proga v preteklih letih. Večina trase poteka po trdi asfaltni podlagi s krajšim odsekom utrjenega makadamom. Štart in cilj je na Seidlovi cesti, proga pa je speljana je ob reki Krki in po najlepših tekaških terenih v okolici Novega mesta. Proga je uradno izmerjena in ima certifikat AIMS.'
   -
     type: paragraph
     content:
@@ -28,9 +22,15 @@ bard_field:
         marks:
           -
             type: bold
-        text: 'Limit polmaratona je 3h. Tekači na 21.097 m, ki boste imeli na vmesnem času na 6,5 km slabši čas od 50 min bruto, boste preusmerjeni na progo 10 km teka.'
+        text: 'Limit polmaratona je 3h. Tekači na polmaratonu, ki boste imeli na vmesni času na 4 km slabši čas od 41 min bruto, boste preusmerjeni na progo 10 km teka.'
   -
     type: paragraph
+    content:
+      -
+        type: image
+        attrs:
+          src: 'asset::assets::trasa-21km---6.nm21.jpg'
+          alt: 'Nova proga poteka ob reki Krki'
 gallery:
   - trasa-21km---6.nm21.jpg
 ---
