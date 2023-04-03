@@ -1,12 +1,12 @@
 ---
 id: 2c39412d-29d8-4393-8202-e3d960217784
 blueprint: pages
-title: 'Trasa rekreativni tek - 6,5km'
+title: 'Trasa rekreativni tek - 5km'
 template: page
 parent: 1c7c3218-1a8a-4b54-82a7-4f80e3f28d8e
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1652255169
-code_field: '<iframe src="https://www.google.com/maps/d/embed?mid=1yXRdMCtI7lqyUTi2oSIbLvllg8Q_Y6oV&ehbc=2E312F" width="100%" height="500"></iframe>'
+updated_at: 1680505423
+code_field: '<iframe src="https://www.google.com/maps/d/embed?mid=1TCKoG7t6ycl7pm_KX8ARbskt7OYszR4&ehbc=2E312F" width="1000" height="500"></iframe>'
 bard_field:
   -
     type: paragraph
