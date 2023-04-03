@@ -5,7 +5,7 @@ title: 'Trasa Polmaraton 21.097 m'
 template: page
 parent: 1c7c3218-1a8a-4b54-82a7-4f80e3f28d8e
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1680506393
+updated_at: 1680506470
 code_field: '<iframe src="https://www.google.com/maps/d/embed?mid=1P8T4-L-vZog1MF08qNHf9yfBxaRA97U&ehbc=2E312F" width="100%" height="500"></iframe>'
 bard_field:
   -
@@ -29,4 +29,8 @@ bard_field:
           -
             type: bold
         text: 'Limit polmaratona je 3h. Tekači na 21.097 m, ki boste imeli na vmesnem času na 6,5 km slabši čas od 50 min bruto, boste preusmerjeni na progo 10 km teka.'
+  -
+    type: paragraph
+gallery:
+  - trasa-21km---6.nm21.jpg
 ---
