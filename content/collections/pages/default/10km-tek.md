@@ -262,7 +262,7 @@ bard_field:
           -
             type: link
             attrs:
-              href: 'https://www.novomesto21.si/trasa/polmaraton-21-097-m'
+              href: 'https://www.novomesto21.si/o-maratonu/10km-tek'
               rel: null
               target: _blank
               title: null
@@ -887,6 +887,6 @@ bard_field:
 template: page
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1679999526
+updated_at: 1680508302
 featured_image: nm_polmaraton_22_nedelja_059.JPG
 ---
