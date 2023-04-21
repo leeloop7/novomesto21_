@@ -4,7 +4,7 @@ blueprint: pages
 title: 'NM21 - 5KM'
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1679999579
+updated_at: 1682079216
 bard_field:
   -
     type: heading
@@ -16,7 +16,7 @@ bard_field:
         marks:
           -
             type: bold
-        text: 'ŠTART 1.10.2023 ob 10:00 uri'
+        text: 'ŠTART - Nedelja 1.10.2023 ob 10:00 uri'
   -
     type: paragraph
     content:
@@ -819,7 +819,7 @@ bard_field:
             content:
               -
                 type: text
-                text: '10 KM TEK: prepovedano je nastopiti otrokom mlajšim od 12 let'
+                text: '5 KM TEK: prepovedano je nastopiti otrokom mlajšim od 10 let - Nastopijo lahko letniki 2013 in starejši.'
       -
         type: listItem
         content:
