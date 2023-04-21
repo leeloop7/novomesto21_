@@ -836,7 +836,7 @@ bard_field:
             content:
               -
                 type: text
-                text: '10 KM TEK: prepovedano je nastopiti otrokom mlajšim od 12 let'
+                text: '10 KM TEK: prepovedano je nastopiti otrokom mlajšim od 12 let. Nastopijo lahko letniki 2011 in starejši. '
       -
         type: listItem
         content:
@@ -845,7 +845,7 @@ bard_field:
             content:
               -
                 type: text
-                text: 'Otroke mlajše od 15 let lahko prijavijo le starši oziroma njihovi skrbniki, kateri prevzemajo odgovornost za vsa tveganja v zvezi z njihovim nastopom in morajo obvezno dostaviti pisno soglasje s strinjanjem o udeležbi teka.'
+                text: 'Osebe mlajše od 15 let lahko prijavijo le starši oziroma njihovi skrbniki, kateri prevzemajo odgovornost za vsa tveganja v zvezi z njihovim nastopom in morajo obvezno dostaviti pisno soglasje s strinjanjem o udeležbi na prireditvi.'
   -
     type: paragraph
   -
@@ -895,9 +895,12 @@ bard_field:
               target: null
               title: null
         text: 'splošna določila in pogoje'
+      -
+        type: text
+        text: .
 template: page
 parent: 36fb6d4d-a49f-46df-bf63-ec19bc895950
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1680508389
+updated_at: 1682078000
 featured_image: nm_polmaraton_22_nedelja_059.JPG
 ---
