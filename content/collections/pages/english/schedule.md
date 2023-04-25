@@ -1,7 +1,7 @@
 ---
 id: 61639a9e-3806-4027-a54f-50f75356f9a8
 origin: e00eae0f-a0e5-4090-8c4a-7d8d9a4cd47a
-title: SCHEDULE
+title: 'EVENT PROGRAM'
 bard_field:
   -
     type: heading
@@ -10,7 +10,7 @@ bard_field:
     content:
       -
         type: text
-        text: Schedule
+        text: 'PROGRAM SCHEDULE:'
   -
     type: heading
     attrs:
@@ -21,7 +21,7 @@ bard_field:
         marks:
           -
             type: bold
-        text: 'FRIDAY 30.9.2022 - Kulturni center Janez Trdina'
+        text: 'FRIDAY 29.9.2023 - Kulturni center Janez Trdina, Novi trg 5'
   -
     type: paragraph
     content:
@@ -30,7 +30,7 @@ bard_field:
         marks:
           -
             type: bold
-        text: '16:00 - 20:00 - BIB PICK UP (21km,10km,6.5km) at Kulturni center Janez Trdina, Novi trg 5'
+        text: '16:00 - 20:00 - BIB PICK UP (21km, 10km, 5km) at Kulturni center Janez Trdina, Novi trg 5'
   -
     type: heading
     attrs:
@@ -41,7 +41,7 @@ bard_field:
         marks:
           -
             type: bold
-        text: 'SATURDAY 1.10.2022 – Novi trg'
+        text: 'SATURDAY 30.9.2023 – Novi trg'
   -
     type: paragraph
     content:
@@ -50,7 +50,7 @@ bard_field:
         marks:
           -
             type: bold
-        text: '14:00 -19:00  - BIB PICK UP (21km,10km,6.5km) at Kulturni center Janez Trdina, Novi trg 5'
+        text: '14:00 -19:00  - BIB PICK UP (21km, 10km, 5km) at Kulturni center Janez Trdina, Novi trg 5'
   -
     type: paragraph
     content:
@@ -59,7 +59,7 @@ bard_field:
         marks:
           -
             type: bold
-        text: '14:00 - 16:00 - REGISTRATIONS & BIB PICK U KIDS RACES, CANICROSS, NORDIC WALKING - Novi trg'
+        text: '14:00 - 16:00 - REGISTRATIONS & BIB PICK UP - KIDS RACES, CANICROSS, NORDIC WALKING - Novi trg'
   -
     type: paragraph
     content:
@@ -77,7 +77,7 @@ bard_field:
         marks:
           -
             type: bold
-        text: '15:30 - BABY RUN WITH PARENTS'
+        text: '15:30 - BABY RUN WITH PARENTS - year 2019 and younger'
   -
     type: paragraph
     content:
@@ -86,7 +86,7 @@ bard_field:
         marks:
           -
             type: bold
-        text: '15:40 - TEK PREDŠOLSKI OTROCI'
+        text: '15:40 - BABY RUN WITH PARENTS - year 2018'
   -
     type: paragraph
     content:
@@ -131,10 +131,7 @@ bard_field:
         marks:
           -
             type: bold
-        text: '18:30 - CONCERT - ORCHESTRA AVE '
-      -
-        type: text
-        text: ' '
+        text: '18:30 - CONCERT '
   -
     type: heading
     attrs:
@@ -145,7 +142,7 @@ bard_field:
         marks:
           -
             type: bold
-        text: 'SUNDAY 2.10.2022 – Novi trg, Seidlova cesta,'
+        text: 'SUNDAY 1.10.2023 – Novi trg, Seidlova cesta,'
   -
     type: paragraph
     content:
@@ -163,7 +160,7 @@ bard_field:
         marks:
           -
             type: bold
-        text: "10:05\_- START HALF MARATHON, 10KM\_and  6,5KM"
+        text: "10:00\_- START HALF MARATHON, 10KM\_and  5KM"
   -
     type: paragraph
     content:
@@ -172,7 +169,7 @@ bard_field:
         marks:
           -
             type: bold
-        text: "10:20\_- FINISH of 6.5km CITY RUN, first lap of 21km and 10km"
+        text: "10:16\_- FINISH of 5km CITY RUN, first lap of 10km"
   -
     type: paragraph
     content:
@@ -181,7 +178,7 @@ bard_field:
         marks:
           -
             type: bold
-        text: "10:30 - FINISH\_of the fastest 10km runners"
+        text: "10:35 - FINISH\_of the fastest 10km runners"
   -
     type: paragraph
     content:
@@ -200,6 +197,6 @@ bard_field:
           -
             type: bold
         text: "13:00\_- MEDAL CEREMONY\_WITH PARTY at Novi trg"
-updated_by: c82a7926-03bd-4bb0-81b3-2109899ea6c9
-updated_at: 1664450851
+updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
+updated_at: 1682409133
 ---
