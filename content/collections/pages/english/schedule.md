@@ -14,7 +14,7 @@ bard_field:
   -
     type: heading
     attrs:
-      level: 2
+      level: 3
     content:
       -
         type: text
@@ -34,7 +34,7 @@ bard_field:
   -
     type: heading
     attrs:
-      level: 2
+      level: 3
     content:
       -
         type: text
@@ -135,14 +135,14 @@ bard_field:
   -
     type: heading
     attrs:
-      level: 2
+      level: 3
     content:
       -
         type: text
         marks:
           -
             type: bold
-        text: 'SUNDAY 1.10.2023 – Novi trg, Seidlova cesta,'
+        text: 'SUNDAY 1.10.2023 – Novi trg, Seidlova cesta'
   -
     type: paragraph
     content:
@@ -198,5 +198,5 @@ bard_field:
             type: bold
         text: "13:00\_- MEDAL CEREMONY\_WITH PARTY at Novi trg"
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1682409133
+updated_at: 1682409227
 ---
