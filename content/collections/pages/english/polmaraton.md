@@ -5,7 +5,7 @@ bard_field:
   -
     type: heading
     attrs:
-      level: 3
+      level: 2
     content:
       -
         type: text
@@ -37,7 +37,7 @@ bard_field:
             content:
               -
                 type: text
-                text: 'bib number with chip Štartna številka s čipom za elektronsko merjenje časov'
+                text: 'bib number with chip '
       -
         type: listItem
         content:
@@ -1470,5 +1470,5 @@ bard_field:
         type: text
         text: .
 updated_by: 92c844c4-0b68-4e10-9f82-950d24236efc
-updated_at: 1682409715
+updated_at: 1682410237
 ---
